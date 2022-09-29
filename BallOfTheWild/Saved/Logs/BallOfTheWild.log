@@ -1158,3 +1158,21 @@ Recommended: 22.2.2
 [2022.09.28-23.54.15:359][972]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
 [2022.09.28-23.54.15:373][972]LogUObjectHash: Compacting FUObjectHashTables data took   4.29ms
 [2022.09.28-23.54.15:424][973]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2022.09.28-23.56.57:561][556]LogUObjectHash: Compacting FUObjectHashTables data took   4.13ms
+[2022.09.28-23.56.57:575][556]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/ThirdPerson/Maps/ThirdPersonMap_Auto6
+[2022.09.28-23.56.57:575][556]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/ThirdPersonMap_Auto605E1890C4E99111EA8A784B741E181D4.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Autosaves/Game/ThirdPerson/Maps/ThirdPersonMap_Auto6.umap'
+[2022.09.28-23.56.57:582][556]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/ThirdPerson/Maps/ThirdPersonMap' took 0.114
+[2022.09.28-23.56.57:582][556]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.114
+[2022.09.28-23.56.57:583][556]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter] ([2] browsable assets)...
+[2022.09.28-23.56.57:602][556]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter]
+[2022.09.28-23.56.57:602][556]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter]
+[2022.09.28-23.56.57:618][556]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter_Auto6
+[2022.09.28-23.56.57:618][556]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/BP_ThirdPersonCharacter_Auto6D9FA6F914EA2E866CFF8CE8F59388676.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Autosaves/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter_Auto6.uasset'
+[2022.09.28-23.56.57:621][556]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Timer_UI] ([2] browsable assets)...
+[2022.09.28-23.56.57:626][556]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/Timer_UI.Timer_UI]
+[2022.09.28-23.56.57:626][556]OBJ SavePackage: Finished generating thumbnails for package [/Game/Timer_UI]
+[2022.09.28-23.56.57:643][556]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Timer_UI_Auto6
+[2022.09.28-23.56.57:643][556]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Timer_UI_Auto605D60A5A4E5CEB8FCD330EB341628DA3.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Autosaves/Game/Timer_UI_Auto6.uasset'
+[2022.09.28-23.56.57:645][556]LogFileHelpers: Auto-saving content packages took 0.063
+[2022.09.28-23.57.11:889][600]LogDerivedDataCache: C:/Users/hwell/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.017 and deleted 0 file(s) with total size 0 MiB.
+[2022.09.28-23.59.21:985][989]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
