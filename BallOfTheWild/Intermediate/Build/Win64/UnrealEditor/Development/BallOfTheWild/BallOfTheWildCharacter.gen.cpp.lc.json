@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\ballofthewildeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\development\\ballofthewild\\definitions.ballofthewild.h",
+            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\source\\ballofthewild\\ballofthewildcharacter.h",
+            "c:\\program files\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "c:\\program files\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "c:\\program files\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

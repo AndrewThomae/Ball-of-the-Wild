@@ -1,7 +1,7 @@
-C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild\BallOfTheWildCharacter.gen.cpp
+C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild\BallOfTheWildCharacter.gen.cpp
 /I .
-/I C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild
-/I C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Source
+/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild
+/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -277,12 +277,12 @@ C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\U
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\Definitions.BallOfTheWild.h"
-/Yu"C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.gen.cpp.obj"
-/sourceDependencies C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.gen.cpp.json
+/FI"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\Definitions.BallOfTheWild.h"
+/Yu"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.gen.cpp.obj"
+/sourceDependencies C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.gen.cpp.json
 /Zc:inline
 /nologo
 /Oi
