@@ -1796,3 +1796,1065 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.10.07-01.43.47:573][697]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Timer_UIB02D58094438F5023B5CBDB6918E0711.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Timer_UI.uasset'
 [2022.10.07-01.43.47:585][697]AssetCheck: New page: Asset Save: Timer_UI
 [2022.10.07-01.43.47:585][697]LogContentValidation: Display: Validating WidgetBlueprint /Game/Timer_UI.Timer_UI
+[2022.10.07-01.45.33:412][138]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2022.10.07-01.45.34:453][138]LogSlate: Window 'Save Content' being destroyed
+[2022.10.07-01.45.34:572][138]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Timer_UI" FILE="../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Timer_UI.uasset" SILENT=true
+[2022.10.07-01.45.34:588][138]LogSavePackage: Moving output files for package: /Game/Timer_UI
+[2022.10.07-01.45.34:588][138]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Timer_UI8BDF966D4ACAD1590D1A4BB9AEAC10E4.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Timer_UI.uasset'
+[2022.10.07-01.45.34:641][138]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Map.Map
+[2022.10.07-01.45.34:642][138]Cmd: MAP LOAD FILE="../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.10.07-01.45.34:642][138]LightingResults: New page: Lighting Build
+[2022.10.07-01.45.34:642][138]LoadErrors: New page: Loading map: Map.umap
+[2022.10.07-01.45.34:643][138]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.45.34:643][138]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.45.34:643][138]MapCheck: New page: Map Check
+[2022.10.07-01.45.34:643][138]LightingResults: New page: Lighting Build
+[2022.10.07-01.45.34:666][138]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.45.34:668][138]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2022.10.07-01.45.34:669][138]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.45.34:669][138]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.45.34:694][138]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2022.10.07-01.45.34:718][138]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2022.10.07-01.45.34:722][138]LogAudio: Display: Audio Device (ID: 1) registered with world 'Map'.
+[2022.10.07-01.45.34:723][138]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.45.34:723][138]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.45.34:723][138]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.45.34:726][138]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.10.07-01.45.34:751][138]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2022.10.07-01.45.34:760][138]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.10.07-01.45.34:760][138]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.115ms to complete.
+[2022.10.07-01.45.34:760][138]LogFileHelpers: Loading map 'Map' took 0.118
+[2022.10.07-01.45.34:777][138]AssetCheck: New page: Asset Save: Timer_UI
+[2022.10.07-01.45.34:777][138]LogContentValidation: Display: Validating WidgetBlueprint /Game/Timer_UI.Timer_UI
+[2022.10.07-01.45.37:898][413]LogAssetEditorSubsystem: Opening Asset editor for LevelScriptBlueprint /Game/Map.Map:PersistentLevel.Map
+[2022.10.07-01.45.37:898][413]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.45.44:431][971]LogSlate: Window 'Map' being destroyed
+[2022.10.07-01.45.44:437][971]LogSlate: Window 'Map' being destroyed
+[2022.10.07-01.45.44:441][971]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.45.44:441][971]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.45.47:842][288]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Stamina_Bar.Stamina_Bar
+[2022.10.07-01.45.47:842][288]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.45.47:857][288]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.45.48:192][288]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2022.10.07-01.45.48:192][288]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2022.10.07-01.45.49:268][405]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.45.49:292][408]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.46.41:128][508]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2022.10.07-01.46.41:129][508]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.48.30:858][789]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2022.10.07-01.48.30:933][789]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2022.10.07-01.48.33:309][ 51]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.48.33:315][ 51]BlueprintLog: New page: Pre-Play auto-recompile
+[2022.10.07-01.48.33:324][ 51]LogPlayLevel: [PlayLevel] Compiling Timer_UI before play...
+[2022.10.07-01.48.33:404][ 51]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.48.33:406][ 51]LogPlayLevel: PlayLevel: Blueprint regeneration took 90 ms (1 blueprints)
+[2022.10.07-01.48.33:406][ 51]PIE: New page: PIE session: Map (Oct 6, 2022, 5:48:33 PM)
+[2022.10.07-01.48.33:406][ 51]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Map
+[2022.10.07-01.48.33:409][ 51]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003107s)
+[2022.10.07-01.48.33:409][ 51]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map.Map to /Game/UEDPIE_0_Map.Map (0.003159s)
+[2022.10.07-01.48.33:409][ 51]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.48.33:409][ 51]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.48.33:410][ 51]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.48.33:410][ 51]LogPlayLevel: PIE: World Init took: (0.000570s)
+[2022.10.07-01.48.33:442][ 51]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2022.10.07-01.48.33:442][ 51]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2022.10.07-01.48.33:442][ 51]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.48.33:442][ 51]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.48.33:442][ 51]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.48.33:442][ 51]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.48.33:443][ 51]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.48.33:443][ 51]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.48.33:443][ 51]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.48.33:443][ 51]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.48.33:443][ 51]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.48.33:443][ 51]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.48.33:443][ 51]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.48.33:445][ 51]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.48.33:464][ 51]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.48.33:464][ 51]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.48.33:464][ 51]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.48.33:464][ 51]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.48.33:465][ 51]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=17
+[2022.10.07-01.48.33:465][ 51]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=17
+[2022.10.07-01.48.33:466][ 51]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=17
+[2022.10.07-01.48.33:466][ 51]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=17
+[2022.10.07-01.48.33:466][ 51]LogInit: FAudioDevice initialized.
+[2022.10.07-01.48.33:466][ 51]LogAudio: Display: Audio Device (ID: 17) registered with world 'Map'.
+[2022.10.07-01.48.33:523][ 51]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.48.33:523][ 51]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.48.33:524][ 51]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.48.33
+[2022.10.07-01.48.33:524][ 51]LogWorld: Bringing up level for play took: 0.000973
+[2022.10.07-01.48.33:526][ 51]LogOnline: OSS: Created online subsystem instance for: :Context_31
+[2022.10.07-01.48.33:853][ 51]LogScript: Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	BP_ThirdPersonCharacter_C /Game/UEDPIE_0_Map.Map:PersistentLevel.BP_ThirdPersonCharacter_C_0
+	Function /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C:ExecuteUbergraph_BP_ThirdPersonCharacter:0084
+[2022.10.07-01.48.33:853][ 51]PIE: Error: Infinite loop detected. Blueprint:  BP_ThirdPersonCharacter Function:  Cast To Match_Settings Call Stack:  Show
+[2022.10.07-01.48.33:854][ 51]PIE: Server logged in
+[2022.10.07-01.48.33:854][ 51]PIE: Play in editor total start time 0.539 seconds.
+[2022.10.07-01.48.33:856][ 51]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.48.33:856][ 51]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.48.33:856][ 51]LogSlate: Window 'BallOfTheWild Preview [NetMode: Standalone]  (64-bit/SM5)' being destroyed
+[2022.10.07-01.48.33:861][ 51]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.48.33:861][ 51]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.33:872][ 51]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.48.33:877][ 51]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.33:909][ 51]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2022.10.07-01.48.33:910][ 51]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2022.10.07-01.48.33:915][ 51]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2022.10.07-01.48.34:042][ 52]LogPlayLevel: Display: Destroying online subsystem :Context_31
+[2022.10.07-01.48.38:208][546]LogSlate: Window 'Message Log' being destroyed
+[2022.10.07-01.48.38:214][546]LogSlate: Window 'Message Log' being destroyed
+[2022.10.07-01.48.42:705][ 72]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2022.10.07-01.48.42:772][ 72]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2022.10.07-01.48.43:750][178]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.48.43:757][178]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.48.43:757][178]PIE: New page: PIE session: Map (Oct 6, 2022, 5:48:43 PM)
+[2022.10.07-01.48.43:757][178]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Map
+[2022.10.07-01.48.43:760][178]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003020s)
+[2022.10.07-01.48.43:760][178]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map.Map to /Game/UEDPIE_0_Map.Map (0.003069s)
+[2022.10.07-01.48.43:760][178]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.48.43:760][178]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.48.43:760][178]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.48.43:760][178]LogPlayLevel: PIE: World Init took: (0.000535s)
+[2022.10.07-01.48.43:793][178]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.48.43:796][178]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.48.43:796][178]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.48.43:796][178]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.48.43:797][178]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.48.43:797][178]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.48.43:797][178]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.48.43:799][178]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.48.43:818][178]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.48.43:818][178]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.48.43:818][178]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.48.43:818][178]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.48.43:819][178]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=18
+[2022.10.07-01.48.43:819][178]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=18
+[2022.10.07-01.48.43:820][178]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=18
+[2022.10.07-01.48.43:820][178]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=18
+[2022.10.07-01.48.43:820][178]LogInit: FAudioDevice initialized.
+[2022.10.07-01.48.43:820][178]LogAudio: Display: Audio Device (ID: 18) registered with world 'Map'.
+[2022.10.07-01.48.43:856][178]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.48.43:856][178]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.48.43:857][178]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.48.43
+[2022.10.07-01.48.43:857][178]LogWorld: Bringing up level for play took: 0.001052
+[2022.10.07-01.48.43:859][178]LogOnline: OSS: Created online subsystem instance for: :Context_32
+[2022.10.07-01.48.43:863][178]PIE: Server logged in
+[2022.10.07-01.48.43:864][178]PIE: Play in editor total start time 0.106 seconds.
+[2022.10.07-01.48.43:871][178]LogViewport: Scene viewport resized to 1280x720, mode Windowed.
+[2022.10.07-01.48.46:012][331]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.48.46:012][331]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.48.46:013][331]LogSlate: Window 'BallOfTheWild Preview [NetMode: Standalone]  (64-bit/SM5)' being destroyed
+[2022.10.07-01.48.46:017][331]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.48.46:018][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.46:027][331]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.48.46:031][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.46:063][331]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.48.46:063][331]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2022.10.07-01.48.46:064][331]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2022.10.07-01.48.46:070][331]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2022.10.07-01.48.46:093][333]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2022.10.07-01.48.51:799][980]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2022.10.07-01.48.52:919][980]LogSlate: Window 'Save Content' being destroyed
+[2022.10.07-01.48.53:242][980]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2022.10.07-01.48.53:242][980]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/BP_ThirdPersonCharacterD5E4D9C0480929B1CD344A9E0F936AA0.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2022.10.07-01.48.53:246][980]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Stamina_Bar" FILE="../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Stamina_Bar.uasset" SILENT=true
+[2022.10.07-01.48.53:252][980]LogSavePackage: Moving output files for package: /Game/Stamina_Bar
+[2022.10.07-01.48.53:252][980]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Stamina_Bar6EEACD924EFEC4E4AB1E0EAF9E4AC4C8.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Stamina_Bar.uasset'
+[2022.10.07-01.48.53:296][980]LogAssetEditorSubsystem: Opening Asset editor for World /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel
+[2022.10.07-01.48.53:296][980]Cmd: MAP LOAD FILE="../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Maps/MatchOptionsLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.10.07-01.48.53:296][980]LightingResults: New page: Lighting Build
+[2022.10.07-01.48.53:296][980]LoadErrors: New page: Loading map: MatchOptionsLevel.umap
+[2022.10.07-01.48.53:298][980]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.48.53:298][980]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.53:298][980]MapCheck: New page: Map Check
+[2022.10.07-01.48.53:298][980]LightingResults: New page: Lighting Build
+[2022.10.07-01.48.53:330][980]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.48.53:332][980]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2022.10.07-01.48.53:334][980]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.48.53:334][980]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.53:369][980]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.48.53:403][980]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2022.10.07-01.48.53:410][980]LogAudio: Display: Audio Device (ID: 1) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.48.53:410][980]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.48.53:410][980]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.48.53:411][980]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.48.53:411][980]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.10.07-01.48.53:446][980]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2022.10.07-01.48.53:455][980]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.10.07-01.48.53:455][980]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.113ms to complete.
+[2022.10.07-01.48.53:455][980]LogFileHelpers: Loading map 'MatchOptionsLevel' took 0.159
+[2022.10.07-01.48.53:473][980]AssetCheck: New page: Asset Save: multiple assets
+[2022.10.07-01.48.53:473][980]LogContentValidation: Display: Validating Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2022.10.07-01.48.53:473][980]LogContentValidation: Display: Validating WidgetBlueprint /Game/Stamina_Bar.Stamina_Bar
+[2022.10.07-01.48.53:474][980]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot': LevelDatabaseActor_C /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel:PersistentLevel.LevelDatabaseActor_C_2
+[2022.10.07-01.48.54:925][148]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.48.54:931][148]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.48.54:931][148]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:48:54 PM)
+[2022.10.07-01.48.54:931][148]LogPlayLevel: Creating play world package: /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.48.54:932][148]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001083s)
+[2022.10.07-01.48.54:932][148]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel to /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001136s)
+[2022.10.07-01.48.54:932][148]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.48.54:932][148]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.48.54:932][148]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.48.54:933][148]LogPlayLevel: PIE: World Init took: (0.000569s)
+[2022.10.07-01.48.54:966][148]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.48.54:967][148]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.48.54:967][148]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.48.54:967][148]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.48.54:967][148]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.48.54:967][148]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.48.54:967][148]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.48.54:969][148]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.48.54:988][148]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.48.54:988][148]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.48.54:988][148]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.48.54:988][148]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.48.54:989][148]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=19
+[2022.10.07-01.48.54:989][148]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=19
+[2022.10.07-01.48.54:990][148]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=19
+[2022.10.07-01.48.54:990][148]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=19
+[2022.10.07-01.48.54:990][148]LogInit: FAudioDevice initialized.
+[2022.10.07-01.48.54:990][148]LogAudio: Display: Audio Device (ID: 19) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.48.55:022][148]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.48.55:022][148]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.48.55:022][148]LogWorld: Bringing World /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.48.55
+[2022.10.07-01.48.55:022][148]LogWorld: Bringing up level for play took: 0.000315
+[2022.10.07-01.48.55:024][148]LogOnline: OSS: Created online subsystem instance for: :Context_34
+[2022.10.07-01.48.55:024][148]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.10.07-01.48.55:027][148]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.48.55:027][148]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.48.55:029][148]PIE: Server logged in
+[2022.10.07-01.48.55:030][148]PIE: Play in editor total start time 0.099 seconds.
+[2022.10.07-01.48.55:037][148]LogViewport: Scene viewport resized to 1280x720, mode Windowed.
+[2022.10.07-01.48.58:959][597]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.07-01.48.58:959][597]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.07-01.48.58:960][597]LogNet: Browse: /Game/Map
+[2022.10.07-01.48.58:960][597]LogLoad: LoadMap: /Game/Map
+[2022.10.07-01.48.58:960][597]LogWorld: BeginTearingDown for /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.48.58:961][597]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.48.58:961][597]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.48.59:033][597]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.48.59:035][597]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2022.10.07-01.48.59:042][597]LogAudio: Display: Audio Device (ID: 19) registered with world 'Map'.
+[2022.10.07-01.48.59:042][597]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.48.59:042][597]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.48.59:042][597]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.48.59:042][597]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2022.10.07-01.48.59:042][597]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.48.59:044][597]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.48.59
+[2022.10.07-01.48.59:044][597]LogWorld: Bringing up level for play took: 0.001640
+[2022.10.07-01.48.59:047][597]LogLoad: Took 0.087407 seconds to LoadMap(/Game/Map)
+[2022.10.07-01.49.33:643][623]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.49.33:643][623]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.49.33:644][623]LogSlate: Window 'BallOfTheWild Preview [NetMode: Standalone]  (64-bit/SM5)' being destroyed
+[2022.10.07-01.49.33:648][623]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.49.33:648][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.49.33:659][623]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.49.33:664][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.49.33:696][623]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.49.33:696][623]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2022.10.07-01.49.33:697][623]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2022.10.07-01.49.33:703][623]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2022.10.07-01.49.33:717][624]LogPlayLevel: Display: Destroying online subsystem :Context_34
+[2022.10.07-01.49.36:159][915]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.49.36:165][915]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.49.36:165][915]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:49:36 PM)
+[2022.10.07-01.49.36:165][915]LogPlayLevel: Creating play world package: /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.49.36:166][915]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001054s)
+[2022.10.07-01.49.36:166][915]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel to /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001106s)
+[2022.10.07-01.49.36:166][915]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.49.36:166][915]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.49.36:166][915]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.49.36:166][915]LogPlayLevel: PIE: World Init took: (0.000552s)
+[2022.10.07-01.49.36:199][915]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2022.10.07-01.49.36:200][915]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.49.36:200][915]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.49.36:200][915]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.49.36:200][915]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.49.36:200][915]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.49.36:200][915]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.49.36:202][915]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.49.36:221][915]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.49.36:221][915]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.49.36:221][915]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.49.36:221][915]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.49.36:221][915]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=20
+[2022.10.07-01.49.36:221][915]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=20
+[2022.10.07-01.49.36:223][915]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=20
+[2022.10.07-01.49.36:223][915]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=20
+[2022.10.07-01.49.36:223][915]LogInit: FAudioDevice initialized.
+[2022.10.07-01.49.36:223][915]LogAudio: Display: Audio Device (ID: 20) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.49.36:273][915]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.49.36:273][915]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.49.36:274][915]LogWorld: Bringing World /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.49.36
+[2022.10.07-01.49.36:274][915]LogWorld: Bringing up level for play took: 0.000310
+[2022.10.07-01.49.36:276][915]LogOnline: OSS: Created online subsystem instance for: :Context_35
+[2022.10.07-01.49.36:276][915]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.10.07-01.49.36:280][915]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.49.36:280][915]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.49.36:283][915]PIE: Server logged in
+[2022.10.07-01.49.36:285][915]PIE: Play in editor total start time 0.121 seconds.
+[2022.10.07-01.49.36:293][915]LogViewport: Scene viewport resized to 1280x720, mode Windowed.
+[2022.10.07-01.49.39:083][223]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.49.39:083][223]LogWorld: BeginTearingDown for /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.49.39:083][223]LogSlate: Window 'BallOfTheWild Preview [NetMode: Standalone]  (64-bit/SM5)' being destroyed
+[2022.10.07-01.49.39:088][223]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.49.39:088][223]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.49.39:095][223]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.49.39:100][223]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.49.39:132][223]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2022.10.07-01.49.39:133][223]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2022.10.07-01.49.39:138][223]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2022.10.07-01.49.39:161][225]LogPlayLevel: Display: Destroying online subsystem :Context_35
+[2022.10.07-01.49.47:719][206]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PreMatchMenu
+[2022.10.07-01.49.47:720][206]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.49.47:726][206]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.49.48:158][206]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2022.10.07-01.49.48:158][206]LogSlateStyle: Warning: Unable to find Slate Widget Style 'None'. Using FToolbarStyle defaults instead.
+[2022.10.07-01.49.49:254][323]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.49.49:270][325]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.49.49:477][332]LogSlate: Took 0.007565 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2022.10.07-01.50.04:193][ 10]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.50.04:199][ 10]BlueprintLog: New page: Pre-Play auto-recompile
+[2022.10.07-01.50.04:200][ 10]LogPlayLevel: [PlayLevel] Compiling PreMatchMenu before play...
+[2022.10.07-01.50.04:277][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2022.10.07-01.50.04:278][ 10]LogPlayLevel: PlayLevel: Blueprint regeneration took 78 ms (1 blueprints)
+[2022.10.07-01.50.04:278][ 10]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:50:04 PM)
+[2022.10.07-01.50.04:278][ 10]LogPlayLevel: Creating play world package: /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.50.04:279][ 10]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001103s)
+[2022.10.07-01.50.04:279][ 10]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel to /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001156s)
+[2022.10.07-01.50.04:279][ 10]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.50.04:279][ 10]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.50.04:279][ 10]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.50.04:280][ 10]LogPlayLevel: PIE: World Init took: (0.000638s)
+[2022.10.07-01.50.04:317][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.50.04:318][ 10]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.50.04:318][ 10]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.50.04:318][ 10]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.50.04:318][ 10]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.50.04:318][ 10]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.50.04:318][ 10]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.50.04:320][ 10]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.50.04:339][ 10]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.50.04:339][ 10]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.50.04:339][ 10]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.50.04:339][ 10]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.50.04:340][ 10]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=21
+[2022.10.07-01.50.04:340][ 10]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=21
+[2022.10.07-01.50.04:341][ 10]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=21
+[2022.10.07-01.50.04:341][ 10]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=21
+[2022.10.07-01.50.04:341][ 10]LogInit: FAudioDevice initialized.
+[2022.10.07-01.50.04:341][ 10]LogAudio: Display: Audio Device (ID: 21) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.50.04:353][ 10]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.50.04:353][ 10]LogWorld: Bringing World /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.50.04
+[2022.10.07-01.50.04:354][ 10]LogWorld: Bringing up level for play took: 0.000459
+[2022.10.07-01.50.04:355][ 10]LogOnline: OSS: Created online subsystem instance for: :Context_38
+[2022.10.07-01.50.04:358][ 10]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.50.04:358][ 10]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.50.04:358][ 10]PIE: Server logged in
+[2022.10.07-01.50.04:359][ 10]PIE: Play in editor total start time 0.16 seconds.
+[2022.10.07-01.50.05:418][126]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.50.05:493][135]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.50.08:000][436]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.07-01.50.08:000][436]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.07-01.50.08:001][436]LogNet: Browse: /Game/Map
+[2022.10.07-01.50.08:001][436]LogLoad: LoadMap: /Game/Map
+[2022.10.07-01.50.08:001][436]LogWorld: BeginTearingDown for /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.50.08:002][436]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.50.08:002][436]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.50.08:088][436]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.50.08:090][436]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2022.10.07-01.50.08:097][436]LogAudio: Display: Audio Device (ID: 21) registered with world 'Map'.
+[2022.10.07-01.50.08:097][436]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.50.08:097][436]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.50.08:098][436]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.50.08:098][436]LogPlayLevel: PIE: World Init took: (0.000686s)
+[2022.10.07-01.50.08:098][436]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.50.08:100][436]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.50.08
+[2022.10.07-01.50.08:100][436]LogWorld: Bringing up level for play took: 0.001877
+[2022.10.07-01.50.08:104][436]LogLoad: Took 0.101820 seconds to LoadMap(/Game/Map)
+[2022.10.07-01.50.11:843][752]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.50.11:843][752]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.50.11:843][752]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.50.11:843][752]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.50.11:851][752]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.50.11:855][752]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.50.11:891][752]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.50.11:891][752]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2022.10.07-01.50.11:892][752]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2022.10.07-01.50.11:895][752]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.50.11:898][752]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2022.10.07-01.50.11:924][753]LogPlayLevel: Display: Destroying online subsystem :Context_38
+[2022.10.07-01.50.14:376][ 37]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.50.14:383][ 37]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.50.14:383][ 37]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:50:14 PM)
+[2022.10.07-01.50.14:383][ 37]LogPlayLevel: Creating play world package: /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.50.14:384][ 37]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001222s)
+[2022.10.07-01.50.14:384][ 37]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel to /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001296s)
+[2022.10.07-01.50.14:384][ 37]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.50.14:384][ 37]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.50.14:385][ 37]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.50.14:385][ 37]LogPlayLevel: PIE: World Init took: (0.000619s)
+[2022.10.07-01.50.14:421][ 37]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.50.14:422][ 37]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.50.14:422][ 37]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.50.14:422][ 37]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.50.14:423][ 37]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.50.14:423][ 37]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.50.14:423][ 37]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.50.14:425][ 37]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.50.14:443][ 37]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.50.14:443][ 37]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.50.14:444][ 37]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.50.14:444][ 37]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.50.14:444][ 37]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2022.10.07-01.50.14:444][ 37]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=22
+[2022.10.07-01.50.14:445][ 37]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2022.10.07-01.50.14:445][ 37]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2022.10.07-01.50.14:445][ 37]LogInit: FAudioDevice initialized.
+[2022.10.07-01.50.14:445][ 37]LogAudio: Display: Audio Device (ID: 22) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.50.14:452][ 37]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.50.14:452][ 37]LogWorld: Bringing World /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.50.14
+[2022.10.07-01.50.14:453][ 37]LogWorld: Bringing up level for play took: 0.000292
+[2022.10.07-01.50.14:454][ 37]LogOnline: OSS: Created online subsystem instance for: :Context_39
+[2022.10.07-01.50.14:457][ 37]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.50.14:457][ 37]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.50.14:457][ 37]PIE: Server logged in
+[2022.10.07-01.50.14:457][ 37]PIE: Play in editor total start time 0.075 seconds.
+[2022.10.07-01.50.17:555][404]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.07-01.50.17:555][404]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.07-01.50.17:556][404]LogNet: Browse: /Game/Map
+[2022.10.07-01.50.17:556][404]LogLoad: LoadMap: /Game/Map
+[2022.10.07-01.50.17:556][404]LogWorld: BeginTearingDown for /Game/ThirdPerson/Maps/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.50.17:557][404]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.50.17:557][404]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.50.17:617][404]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.50.17:619][404]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2022.10.07-01.50.17:626][404]LogAudio: Display: Audio Device (ID: 22) registered with world 'Map'.
+[2022.10.07-01.50.17:626][404]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.50.17:626][404]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.50.17:626][404]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.50.17:627][404]LogPlayLevel: PIE: World Init took: (0.000579s)
+[2022.10.07-01.50.17:627][404]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.50.17:628][404]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.50.17
+[2022.10.07-01.50.17:628][404]LogWorld: Bringing up level for play took: 0.001662
+[2022.10.07-01.50.17:632][404]LogLoad: Took 0.075764 seconds to LoadMap(/Game/Map)
+[2022.10.07-01.51.22:413][898]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.51.22:413][898]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.51.22:413][898]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.51.22:413][898]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.51.22:420][898]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.51.22:425][898]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.51.22:461][898]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.51.22:461][898]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2022.10.07-01.51.22:462][898]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2022.10.07-01.51.22:468][898]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.10.07-01.51.22:494][899]LogPlayLevel: Display: Destroying online subsystem :Context_39
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu_C' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu:EventGraph.K2Node_Event_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu:EventGraph.K2Node_Event_1' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu:EventGraph.K2Node_Event_2' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu:OnGenerateWidget_0.K2Node_FunctionEntry_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu:OnGenerateWidget_0.K2Node_FunctionResult_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu_C:OnGenerateWidget_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:OnGenerateWidget_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:BndEvt__PreMatchMenu_ComboBoxString_2_K2Node_ComponentBoundEvent_3_OnSelectionChangedEvent__DelegateSignature' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:BndEvt__PreMatchMenu_ComboBoxString_3_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:BndEvt__PreMatchMenu_Button_36_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:BndEvt__PreMatchMenu_ComboBoxString_67_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:Tick' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:Construct' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:123][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/PreMatchMenu.SKEL_PreMatchMenu_C:PreConstruct' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice_C' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice:EventGraph.K2Node_Event_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice:EventGraph.K2Node_Event_1' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice:EventGraph.K2Node_Event_2' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice:Dropdown Text.K2Node_FunctionEntry_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice:Dropdown Text.K2Node_FunctionResult_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.SKEL_Dropdown_Choice_C:PreConstruct' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.SKEL_Dropdown_Choice_C:Construct' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.SKEL_Dropdown_Choice_C:Tick' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.SKEL_Dropdown_Choice_C:Dropdown Text' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.SKEL_Dropdown_Choice_C' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:131][952]LogMetaData: Removing '/Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice_C:Dropdown Text' ref from Metadata '/Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.PackageMetaData'
+[2022.10.07-01.51.58:190][952]LogSavePackage: Moving output files for package: /Game/Match-Settings/MatchSetupUI/PreMatchMenu
+[2022.10.07-01.51.58:190][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/PreMatchMenu63C1102B4B2ED2B3B4E0CB8EFC21ED4F.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Match-Settings/MatchSetupUI/PreMatchMenu.uasset'
+[2022.10.07-01.51.58:192][952]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu
+[2022.10.07-01.51.58:193][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/PreMatchMenu7B85611D4FD48AC047B1E6A513B5EDDD.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.uasset'
+[2022.10.07-01.51.58:198][952]LogSavePackage: Moving output files for package: /Game/Match-Settings/MatchSetupUI/Dropdown_Choice
+[2022.10.07-01.51.58:198][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Dropdown_Choice3D8892A442E7DCB28125DBA665D8209A.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Match-Settings/MatchSetupUI/Dropdown_Choice.uasset'
+[2022.10.07-01.51.58:200][952]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice
+[2022.10.07-01.51.58:201][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Dropdown_Choice633626E24CA1F94AEA0EBABA2D56CDC4.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.uasset'
+[2022.10.07-01.52.01:890][952]LogSlate: Window 'Message' being destroyed
+[2022.10.07-01.52.01:895][952]Message dialog closed, result: Yes, title: Message, text: The following assets are referenced by one or more Class Default Objects: 
+
+Match_Settings (project settings soft reference)
+MatchOptionsLevel (project settings soft reference)
+
+Continuing with the rename may require changes to fix references in code or project settings. Assets could otherwise be missing in cooked/packaged builds. Do you wish to continue?
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel_C' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel:PersistentLevel.MatchOptionsLevel.EventGraph.K2Node_Event_0' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel:PersistentLevel.MatchOptionsLevel.EventGraph.K2Node_Event_1' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.SKEL_MatchOptionsLevel_C' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel_C:ReceiveBeginPlay' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.SKEL_MatchOptionsLevel_C:ReceiveBeginPlay' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:402][952]LogMetaData: Removing '/Game/Match-Settings/MatchOptionsLevel.SKEL_MatchOptionsLevel_C:ReceiveTick' ref from Metadata '/Game/ThirdPerson/Maps/MatchOptionsLevel.PackageMetaData'
+[2022.10.07-01.52.02:404][952]LogMetaData: Removing '/Game/Match-Settings/Match_Settings.Match_Settings_C' ref from Metadata '/Game/ThirdPerson/Maps/Match_Settings.PackageMetaData'
+[2022.10.07-01.52.02:404][952]LogMetaData: Removing '/Game/Match-Settings/Match_Settings.SKEL_Match_Settings_C' ref from Metadata '/Game/ThirdPerson/Maps/Match_Settings.PackageMetaData'
+[2022.10.07-01.52.02:495][952]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2022.10.07-01.52.02:501][952]LogSavePackage: Moving output files for package: /Game/Match-Settings/MatchOptionsLevel
+[2022.10.07-01.52.02:501][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/MatchOptionsLevelE4A246444D063A2336CB2C926C546D6D.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Match-Settings/MatchOptionsLevel.umap'
+[2022.10.07-01.52.02:651][952]LogFileHelpers: Saving map 'MatchOptionsLevel' took 0.195
+[2022.10.07-01.52.02:653][952]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Maps/MatchOptionsLevel
+[2022.10.07-01.52.02:654][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/MatchOptionsLevel22685B044509D12E5BCACC934B0E9020.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Maps/MatchOptionsLevel.umap'
+[2022.10.07-01.52.02:657][952]LogSavePackage: Moving output files for package: /Game/Match-Settings/Match_Settings
+[2022.10.07-01.52.02:658][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Match_Settings773474064ADCF18428049DBDFB0813FB.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Match-Settings/Match_Settings.uasset'
+[2022.10.07-01.52.02:659][952]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Maps/Match_Settings
+[2022.10.07-01.52.02:660][952]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/Match_SettingsBB36BCF24CD1097A376A18A8911AF236.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Maps/Match_Settings.uasset'
+[2022.10.07-01.52.03:070][952]AssetCheck: New page: Asset Save: multiple assets
+[2022.10.07-01.52.03:070][952]LogContentValidation: Display: Validating WidgetBlueprint /Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating WidgetBlueprint /Game/Match-Settings/MatchSetupUI/Dropdown_Choice.Dropdown_Choice
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating Blueprint /Game/Match-Settings/Match_Settings.Match_Settings
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/Match_Settings.Default__Match_Settings_C
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/Match_Settings.Match_Settings_C
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchOptionsLevel.Default__MatchOptionsLevel_C
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel_C
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchOptionsLevel.MatchOptionsLevel
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.Dropdown_Choice
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/Match_Settings.Match_Settings
+[2022.10.07-01.52.03:071][952]LogContentValidation: Display: Validating World /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel
+[2022.10.07-01.52.03:072][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.Default__Dropdown_Choice_C
+[2022.10.07-01.52.03:072][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchSetupUI/Dropdown_Choice.Dropdown_Choice_C
+[2022.10.07-01.52.03:072][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PreMatchMenu
+[2022.10.07-01.52.03:072][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.Default__PreMatchMenu_C
+[2022.10.07-01.52.03:072][952]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPerson/Maps/MatchSetupUI/PreMatchMenu.PreMatchMenu_C
+[2022.10.07-01.52.11:776][898]LogEditorViewport: Clicking Background
+[2022.10.07-01.52.12:994][ 30]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.52.13:002][ 30]BlueprintLog: New page: Pre-Play auto-recompile
+[2022.10.07-01.52.13:004][ 30]LogPlayLevel: [PlayLevel] Compiling BP_ThirdPersonCharacter before play...
+[2022.10.07-01.52.13:088][ 30]LogPlayLevel: [PlayLevel] Compiling MatchOptionsLevel before play...
+[2022.10.07-01.52.13:106][ 30]LogPlayLevel: [PlayLevel] Compiling Timer_UI before play...
+[2022.10.07-01.52.13:231][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2022.10.07-01.52.13:232][ 30]LogPlayLevel: PlayLevel: Blueprint regeneration took 230 ms (3 blueprints)
+[2022.10.07-01.52.13:232][ 30]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:52:13 PM)
+[2022.10.07-01.52.13:273][ 30]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.52.13:274][ 30]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001183s)
+[2022.10.07-01.52.13:274][ 30]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001268s)
+[2022.10.07-01.52.13:275][ 30]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.52.13:275][ 30]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.52.13:275][ 30]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.52.13:275][ 30]LogPlayLevel: PIE: World Init took: (0.000661s)
+[2022.10.07-01.52.13:321][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2022.10.07-01.52.13:324][ 30]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.52.13:324][ 30]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.52.13:324][ 30]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.52.13:325][ 30]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.52.13:325][ 30]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.52.13:325][ 30]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.52.13:326][ 30]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.52.13:345][ 30]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.52.13:346][ 30]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.52.13:346][ 30]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.52.13:346][ 30]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.52.13:346][ 30]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=23
+[2022.10.07-01.52.13:346][ 30]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=23
+[2022.10.07-01.52.13:347][ 30]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=23
+[2022.10.07-01.52.13:347][ 30]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=23
+[2022.10.07-01.52.13:347][ 30]LogInit: FAudioDevice initialized.
+[2022.10.07-01.52.13:347][ 30]LogAudio: Display: Audio Device (ID: 23) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.52.13:358][ 30]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.52.13:359][ 30]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.52.13
+[2022.10.07-01.52.13:359][ 30]LogWorld: Bringing up level for play took: 0.000259
+[2022.10.07-01.52.13:360][ 30]LogOnline: OSS: Created online subsystem instance for: :Context_40
+[2022.10.07-01.52.13:363][ 30]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.52.13:363][ 30]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.52.13:363][ 30]PIE: Server logged in
+[2022.10.07-01.52.13:363][ 30]PIE: Play in editor total start time 0.362 seconds.
+[2022.10.07-01.52.14:421][144]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.52.14:513][155]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.52.17:953][561]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.07-01.52.17:953][561]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.07-01.52.17:954][561]LogNet: Browse: /Game/Map
+[2022.10.07-01.52.17:954][561]LogLoad: LoadMap: /Game/Map
+[2022.10.07-01.52.17:954][561]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.52.17:955][561]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.52.17:955][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.52.18:044][561]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.52.18:046][561]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2022.10.07-01.52.18:053][561]LogAudio: Display: Audio Device (ID: 23) registered with world 'Map'.
+[2022.10.07-01.52.18:053][561]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.52.18:054][561]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.52.18:054][561]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.52.18:054][561]LogPlayLevel: PIE: World Init took: (0.000589s)
+[2022.10.07-01.52.18:054][561]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.52.18:056][561]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.52.18
+[2022.10.07-01.52.18:056][561]LogWorld: Bringing up level for play took: 0.001792
+[2022.10.07-01.52.18:059][561]LogLoad: Took 0.104870 seconds to LoadMap(/Game/Map)
+[2022.10.07-01.52.20:173][740]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.52.20:173][740]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.52.20:173][740]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.52.20:173][740]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.52.20:185][740]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.52.20:191][740]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.52.20:232][740]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.52.20:232][740]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2022.10.07-01.52.20:233][740]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2022.10.07-01.52.20:239][740]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2022.10.07-01.52.20:268][741]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2022.10.07-01.52.21:951][937]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.52.21:958][937]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.52.21:958][937]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:52:21 PM)
+[2022.10.07-01.52.21:993][937]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.52.21:994][937]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001213s)
+[2022.10.07-01.52.21:994][937]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001292s)
+[2022.10.07-01.52.21:994][937]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.52.21:994][937]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.52.21:995][937]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.52.21:995][937]LogPlayLevel: PIE: World Init took: (0.000650s)
+[2022.10.07-01.52.22:040][937]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2022.10.07-01.52.22:041][937]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.52.22:041][937]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.52.22:041][937]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.52.22:041][937]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.52.22:041][937]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.52.22:041][937]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.52.22:043][937]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.52.22:062][937]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.52.22:063][937]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.52.22:063][937]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.52.22:063][937]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.52.22:063][937]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=24
+[2022.10.07-01.52.22:063][937]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=24
+[2022.10.07-01.52.22:064][937]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=24
+[2022.10.07-01.52.22:064][937]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=24
+[2022.10.07-01.52.22:064][937]LogInit: FAudioDevice initialized.
+[2022.10.07-01.52.22:064][937]LogAudio: Display: Audio Device (ID: 24) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.52.22:074][937]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.52.22:074][937]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.52.22
+[2022.10.07-01.52.22:075][937]LogWorld: Bringing up level for play took: 0.000263
+[2022.10.07-01.52.22:076][937]LogOnline: OSS: Created online subsystem instance for: :Context_41
+[2022.10.07-01.52.22:079][937]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.52.22:079][937]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.52.22:079][937]PIE: Server logged in
+[2022.10.07-01.52.22:079][937]PIE: Play in editor total start time 0.121 seconds.
+[2022.10.07-01.52.26:259][428]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.07-01.52.26:259][428]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.07-01.52.26:260][428]LogNet: Browse: /Game/Map
+[2022.10.07-01.52.26:260][428]LogLoad: LoadMap: /Game/Map
+[2022.10.07-01.52.26:260][428]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.52.26:261][428]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.52.26:261][428]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.52.26:333][428]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.52.26:335][428]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2022.10.07-01.52.26:342][428]LogAudio: Display: Audio Device (ID: 24) registered with world 'Map'.
+[2022.10.07-01.52.26:342][428]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.52.26:342][428]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.52.26:342][428]LogAIModule: Creating AISystem for world Map
+[2022.10.07-01.52.26:343][428]LogPlayLevel: PIE: World Init took: (0.000585s)
+[2022.10.07-01.52.26:343][428]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.52.26:344][428]LogWorld: Bringing World /Game/UEDPIE_0_Map.Map up for play (max tick rate 0) at 2022.10.06-21.52.26
+[2022.10.07-01.52.26:344][428]LogWorld: Bringing up level for play took: 0.001626
+[2022.10.07-01.52.26:347][428]LogLoad: Took 0.087491 seconds to LoadMap(/Game/Map)
+[2022.10.07-01.52.27:703][539]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.52.27:703][539]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map
+[2022.10.07-01.52.27:703][539]LogWorld: UWorld::CleanupWorld for Map, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.52.27:703][539]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.52.27:715][539]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.52.27:721][539]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.52.27:761][539]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.52.27:761][539]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2022.10.07-01.52.27:762][539]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2022.10.07-01.52.27:768][539]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2022.10.07-01.52.27:796][540]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2022.10.07-01.52.33:571][166]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.52.33:578][166]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.52.33:578][166]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:52:33 PM)
+[2022.10.07-01.52.33:603][166]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.52.33:604][166]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001109s)
+[2022.10.07-01.52.33:604][166]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001174s)
+[2022.10.07-01.52.33:604][166]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.52.33:604][166]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.52.33:605][166]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.52.33:605][166]LogPlayLevel: PIE: World Init took: (0.000561s)
+[2022.10.07-01.52.33:646][166]LogUObjectHash: Compacting FUObjectHashTables data took   1.45ms
+[2022.10.07-01.52.33:648][166]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.52.33:648][166]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.52.33:648][166]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.52.33:649][166]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.52.33:649][166]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.52.33:649][166]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.52.33:650][166]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.52.33:669][166]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.52.33:670][166]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.52.33:670][166]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.52.33:670][166]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.52.33:671][166]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=25
+[2022.10.07-01.52.33:671][166]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=25
+[2022.10.07-01.52.33:672][166]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=25
+[2022.10.07-01.52.33:672][166]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=25
+[2022.10.07-01.52.33:672][166]LogInit: FAudioDevice initialized.
+[2022.10.07-01.52.33:672][166]LogAudio: Display: Audio Device (ID: 25) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.52.33:684][166]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.52.33:684][166]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.52.33
+[2022.10.07-01.52.33:684][166]LogWorld: Bringing up level for play took: 0.000356
+[2022.10.07-01.52.33:686][166]LogOnline: OSS: Created online subsystem instance for: :Context_42
+[2022.10.07-01.52.33:689][166]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.52.33:689][166]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.52.33:689][166]PIE: Server logged in
+[2022.10.07-01.52.33:690][166]PIE: Play in editor total start time 0.113 seconds.
+[2022.10.07-01.53.10:324][901]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.53.13:863][260]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.53.13:863][260]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.53.13:863][260]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.53.13:863][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.53.13:872][260]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.53.13:878][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.53.13:919][260]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.53.13:920][260]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2022.10.07-01.53.13:921][260]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2022.10.07-01.53.13:926][260]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2022.10.07-01.53.13:947][261]LogPlayLevel: Display: Destroying online subsystem :Context_42
+[2022.10.07-01.53.14:976][363]BlueprintLog: New page: Compile PreMatchMenu
+[2022.10.07-01.53.15:027][363]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2022.10.07-01.53.16:188][439]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.53.16:195][439]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.53.16:195][439]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:53:16 PM)
+[2022.10.07-01.53.16:195][439]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.53.16:196][439]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001010s)
+[2022.10.07-01.53.16:196][439]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001063s)
+[2022.10.07-01.53.16:196][439]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.53.16:196][439]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.53.16:196][439]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.53.16:197][439]LogPlayLevel: PIE: World Init took: (0.000561s)
+[2022.10.07-01.53.16:239][439]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2022.10.07-01.53.16:241][439]LogAudio: Display: Creating Audio Device:                 Id: 26, Scope: Unique, Realtime: True
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.53.16:241][439]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.53.16:241][439]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.53.16:241][439]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.53.16:241][439]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.53.16:241][439]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.53.16:243][439]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.53.16:262][439]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.53.16:262][439]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.53.16:262][439]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.53.16:262][439]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.53.16:263][439]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=26
+[2022.10.07-01.53.16:263][439]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=26
+[2022.10.07-01.53.16:264][439]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=26
+[2022.10.07-01.53.16:264][439]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=26
+[2022.10.07-01.53.16:264][439]LogInit: FAudioDevice initialized.
+[2022.10.07-01.53.16:264][439]LogAudio: Display: Audio Device (ID: 26) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.53.16:277][439]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.53.16:277][439]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.53.16
+[2022.10.07-01.53.16:277][439]LogWorld: Bringing up level for play took: 0.000419
+[2022.10.07-01.53.16:279][439]LogOnline: OSS: Created online subsystem instance for: :Context_43
+[2022.10.07-01.53.16:283][439]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.53.16:283][439]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.53.16:283][439]PIE: Server logged in
+[2022.10.07-01.53.16:283][439]PIE: Play in editor total start time 0.089 seconds.
+[2022.10.07-01.53.16:346][441]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.53.16:444][450]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.53.20:104][824]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.53.20:104][824]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.53.20:104][824]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.53.20:104][824]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.53.20:111][824]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.53.20:116][824]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.53.20:156][824]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.53.20:157][824]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=26
+[2022.10.07-01.53.20:158][824]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=26
+[2022.10.07-01.53.20:163][824]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2022.10.07-01.53.20:183][825]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2022.10.07-01.53.31:087][ 45]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.53.31:094][ 45]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.53.31:094][ 45]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:53:31 PM)
+[2022.10.07-01.53.31:094][ 45]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.53.31:095][ 45]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001049s)
+[2022.10.07-01.53.31:095][ 45]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001107s)
+[2022.10.07-01.53.31:095][ 45]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.53.31:095][ 45]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.53.31:096][ 45]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.53.31:096][ 45]LogPlayLevel: PIE: World Init took: (0.000565s)
+[2022.10.07-01.53.31:137][ 45]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2022.10.07-01.53.31:140][ 45]LogAudio: Display: Creating Audio Device:                 Id: 27, Scope: Unique, Realtime: True
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.53.31:140][ 45]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.53.31:140][ 45]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.53.31:140][ 45]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.53.31:140][ 45]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.53.31:140][ 45]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.53.31:142][ 45]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.53.31:161][ 45]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.53.31:162][ 45]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.53.31:162][ 45]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.53.31:162][ 45]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.53.31:162][ 45]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=27
+[2022.10.07-01.53.31:162][ 45]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=27
+[2022.10.07-01.53.31:163][ 45]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=27
+[2022.10.07-01.53.31:163][ 45]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=27
+[2022.10.07-01.53.31:163][ 45]LogInit: FAudioDevice initialized.
+[2022.10.07-01.53.31:163][ 45]LogAudio: Display: Audio Device (ID: 27) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.53.31:174][ 45]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.53.31:175][ 45]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.53.31
+[2022.10.07-01.53.31:175][ 45]LogWorld: Bringing up level for play took: 0.000260
+[2022.10.07-01.53.31:176][ 45]LogOnline: OSS: Created online subsystem instance for: :Context_44
+[2022.10.07-01.53.31:179][ 45]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.53.31:179][ 45]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.53.31:179][ 45]PIE: Server logged in
+[2022.10.07-01.53.31:179][ 45]PIE: Play in editor total start time 0.086 seconds.
+[2022.10.07-01.54.11:206][963]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.54.14:441][280]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.54.26:928][495]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.54.34:685][209]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.54.45:312][218]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.54.53:267][950]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.55.00:906][667]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.55.26:043][ 85]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.55.26:043][ 85]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.55.26:043][ 85]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.55.26:043][ 85]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.55.26:050][ 85]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.55.26:056][ 85]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.55.26:097][ 85]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.55.26:097][ 85]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=27
+[2022.10.07-01.55.26:099][ 85]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=27
+[2022.10.07-01.55.26:104][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
+[2022.10.07-01.55.26:125][ 86]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2022.10.07-01.55.27:609][242]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.55.27:617][242]BlueprintLog: New page: Pre-Play auto-recompile
+[2022.10.07-01.55.27:618][242]LogPlayLevel: [PlayLevel] Compiling PreMatchMenu before play...
+[2022.10.07-01.55.27:739][242]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2022.10.07-01.55.27:740][242]LogPlayLevel: PlayLevel: Blueprint regeneration took 123 ms (1 blueprints)
+[2022.10.07-01.55.27:740][242]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:55:27 PM)
+[2022.10.07-01.55.27:741][242]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.55.27:742][242]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001041s)
+[2022.10.07-01.55.27:742][242]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001097s)
+[2022.10.07-01.55.27:742][242]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.55.27:742][242]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.55.27:742][242]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.55.27:742][242]LogPlayLevel: PIE: World Init took: (0.000594s)
+[2022.10.07-01.55.27:784][242]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2022.10.07-01.55.27:785][242]LogAudio: Display: Creating Audio Device:                 Id: 28, Scope: Unique, Realtime: True
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.55.27:785][242]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.55.27:785][242]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.55.27:785][242]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.55.27:785][242]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.55.27:785][242]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.55.27:787][242]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.55.27:806][242]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.55.27:806][242]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.55.27:806][242]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.55.27:807][242]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.55.27:807][242]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=28
+[2022.10.07-01.55.27:807][242]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=28
+[2022.10.07-01.55.27:808][242]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=28
+[2022.10.07-01.55.27:808][242]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=28
+[2022.10.07-01.55.27:808][242]LogInit: FAudioDevice initialized.
+[2022.10.07-01.55.27:808][242]LogAudio: Display: Audio Device (ID: 28) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.55.27:823][242]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.55.27:823][242]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.55.27
+[2022.10.07-01.55.27:823][242]LogWorld: Bringing up level for play took: 0.000417
+[2022.10.07-01.55.27:825][242]LogOnline: OSS: Created online subsystem instance for: :Context_45
+[2022.10.07-01.55.27:828][242]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.55.27:828][242]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.55.27:828][242]PIE: Server logged in
+[2022.10.07-01.55.27:829][242]PIE: Play in editor total start time 0.213 seconds.
+[2022.10.07-01.55.28:898][341]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.55.28:988][350]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.55.59:963][577]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.56.01:964][766]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.56.01:964][766]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.56.01:964][766]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.56.01:964][766]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.56.01:970][766]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.56.01:975][766]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.56.02:016][766]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.07-01.56.02:017][766]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=28
+[2022.10.07-01.56.02:018][766]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=28
+[2022.10.07-01.56.02:021][766]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.56.02:023][766]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2022.10.07-01.56.02:044][767]LogPlayLevel: Display: Destroying online subsystem :Context_45
+[2022.10.07-01.56.08:615][466]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.56.08:621][466]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.07-01.56.08:621][466]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:56:08 PM)
+[2022.10.07-01.56.08:621][466]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.56.08:622][466]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001034s)
+[2022.10.07-01.56.08:622][466]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001092s)
+[2022.10.07-01.56.08:622][466]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.56.08:623][466]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.56.08:623][466]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.56.08:623][466]LogPlayLevel: PIE: World Init took: (0.000609s)
+[2022.10.07-01.56.08:665][466]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2022.10.07-01.56.08:667][466]LogAudio: Display: Creating Audio Device:                 Id: 29, Scope: Unique, Realtime: True
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.56.08:667][466]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.56.08:667][466]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.56.08:668][466]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.56.08:668][466]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.56.08:668][466]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.56.08:669][466]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.56.08:689][466]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.56.08:689][466]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.56.08:689][466]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.56.08:689][466]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.56.08:690][466]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=29
+[2022.10.07-01.56.08:690][466]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=29
+[2022.10.07-01.56.08:691][466]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=29
+[2022.10.07-01.56.08:691][466]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=29
+[2022.10.07-01.56.08:691][466]LogInit: FAudioDevice initialized.
+[2022.10.07-01.56.08:691][466]LogAudio: Display: Audio Device (ID: 29) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.56.08:703][466]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.56.08:703][466]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.56.08
+[2022.10.07-01.56.08:703][466]LogWorld: Bringing up level for play took: 0.000383
+[2022.10.07-01.56.08:705][466]LogOnline: OSS: Created online subsystem instance for: :Context_46
+[2022.10.07-01.56.08:708][466]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.56.08:708][466]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.56.08:708][466]PIE: Server logged in
+[2022.10.07-01.56.08:709][466]PIE: Play in editor total start time 0.088 seconds.
+[2022.10.07-01.56.13:123][894]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.56.13:123][894]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.56.13:123][894]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.56.13:124][894]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.56.13:131][894]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.56.13:136][894]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.56.13:178][894]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.56.13:178][894]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=29
+[2022.10.07-01.56.13:179][894]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=29
+[2022.10.07-01.56.13:185][894]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2022.10.07-01.56.13:206][895]LogPlayLevel: Display: Destroying online subsystem :Context_46
+[2022.10.07-01.56.40:314][805]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.56.42:753][ 56]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.07-01.56.42:760][ 56]BlueprintLog: New page: Pre-Play auto-recompile
+[2022.10.07-01.56.42:761][ 56]LogPlayLevel: [PlayLevel] Compiling PreMatchMenu before play...
+[2022.10.07-01.56.43:116][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2022.10.07-01.56.43:118][ 56]LogPlayLevel: PlayLevel: Blueprint regeneration took 358 ms (1 blueprints)
+[2022.10.07-01.56.43:118][ 56]PIE: New page: PIE session: MatchOptionsLevel (Oct 6, 2022, 5:56:43 PM)
+[2022.10.07-01.56.43:163][ 56]LogPlayLevel: Creating play world package: /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.56.43:164][ 56]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001072s)
+[2022.10.07-01.56.43:164][ 56]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Match-Settings/MatchOptionsLevel.MatchOptionsLevel to /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel (0.001137s)
+[2022.10.07-01.56.43:164][ 56]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.07-01.56.43:164][ 56]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.07-01.56.43:164][ 56]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.07-01.56.43:164][ 56]LogPlayLevel: PIE: World Init took: (0.000613s)
+[2022.10.07-01.56.43:207][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2022.10.07-01.56.43:208][ 56]LogAudio: Display: Creating Audio Device:                 Id: 30, Scope: Unique, Realtime: True
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.07-01.56.43:208][ 56]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.07-01.56.43:208][ 56]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.07-01.56.43:208][ 56]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.07-01.56.43:208][ 56]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.07-01.56.43:208][ 56]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.07-01.56.43:210][ 56]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.07-01.56.43:228][ 56]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2022.10.07-01.56.43:229][ 56]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.07-01.56.43:229][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.07-01.56.43:229][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.07-01.56.43:230][ 56]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=30
+[2022.10.07-01.56.43:230][ 56]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=30
+[2022.10.07-01.56.43:231][ 56]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=30
+[2022.10.07-01.56.43:231][ 56]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=30
+[2022.10.07-01.56.43:231][ 56]LogInit: FAudioDevice initialized.
+[2022.10.07-01.56.43:231][ 56]LogAudio: Display: Audio Device (ID: 30) registered with world 'MatchOptionsLevel'.
+[2022.10.07-01.56.43:247][ 56]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.07-01.56.43:247][ 56]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 0) at 2022.10.06-21.56.43
+[2022.10.07-01.56.43:247][ 56]LogWorld: Bringing up level for play took: 0.000301
+[2022.10.07-01.56.43:249][ 56]LogOnline: OSS: Created online subsystem instance for: :Context_47
+[2022.10.07-01.56.43:252][ 56]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.07-01.56.43:253][ 56]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.07-01.56.43:253][ 56]PIE: Server logged in
+[2022.10.07-01.56.43:253][ 56]PIE: Play in editor total start time 0.494 seconds.
+[2022.10.07-01.56.44:363][148]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.56.44:494][161]SourceControl: fatal: C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components: 'C:/Program Files/Epic Games/UE_5.0/Engine/Source/Runtime/UMG/Public/Components' is outside repository at 'C:/Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild'
+[2022.10.07-01.56.46:813][391]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.56.46:813][391]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.07-01.56.46:813][391]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.07-01.56.46:814][391]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.56.46:824][391]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.07-01.56.46:829][391]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.07-01.56.46:870][391]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.07-01.56.46:870][391]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=30
+[2022.10.07-01.56.46:872][391]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=30
+[2022.10.07-01.56.46:877][391]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2022.10.07-01.56.46:899][392]LogPlayLevel: Display: Destroying online subsystem :Context_47
+[2022.10.07-01.56.52:024][915]LogSlate: Window 'Color Picker' being destroyed
+[2022.10.07-01.58.56:959][784]LogSavePackage: Moving output files for package: /Game/Match-Settings/MatchSetupUI/PreMatchMenu
+[2022.10.07-01.58.56:960][784]LogSavePackage: Moving '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Saved/PreMatchMenuC90B6270478B993AC83521AEA7EFEA50.tmp' to '../../../../../../Users/Wes Turnbull/Documents/GitHub/Ball-of-the-Wild/BallOfTheWild/Content/Match-Settings/MatchSetupUI/PreMatchMenu.uasset'
+[2022.10.07-01.58.56:973][784]AssetCheck: New page: Asset Save: PreMatchMenu
+[2022.10.07-01.58.56:973][784]LogContentValidation: Display: Validating WidgetBlueprint /Game/Match-Settings/MatchSetupUI/PreMatchMenu.PreMatchMenu
