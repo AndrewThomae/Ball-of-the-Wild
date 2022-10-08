@@ -1020,3 +1020,8 @@ Recommended: 22.2.2
 [2022.10.08-16.10.42:467][991]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2022.10.08-16.10.42:473][991]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
 [2022.10.08-16.10.42:524][992]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2022.10.08-16.11.10:862][139]LogUObjectHash: Compacting FUObjectHashTables data took   6.20ms
+[2022.10.08-16.11.10:907][139]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Map_Auto2
+[2022.10.08-16.11.10:907][139]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Map_Auto239D2EF7849D463DF116A96AB2F1EC529.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Autosaves/Game/Map_Auto2.umap'
+[2022.10.08-16.11.10:918][139]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Map' took 0.212
+[2022.10.08-16.11.10:918][139]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.212
