@@ -29,6 +29,12 @@
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
     <Filter Include="Source\BallOfTheWild">
       <UniqueIdentifier>{89521225-F09B-3D02-86C8-7C0822C1B68E}</UniqueIdentifier>
     </Filter>
@@ -51,6 +57,12 @@
       <Filter>Source\BallOfTheWild</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWildGameMode.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BallOfTheWild\MessageParser.cpp">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BallOfTheWild\MessageParser.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
   </ItemGroup>

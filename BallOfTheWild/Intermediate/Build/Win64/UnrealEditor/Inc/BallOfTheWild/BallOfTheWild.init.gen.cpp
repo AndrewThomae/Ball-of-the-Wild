@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWild_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x324ED939,
-				0xAE56F7D7,
+				0xBFE307EB,
+				0x65655C3D,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_BallOfTheWild.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_BallOfTheWild.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BallOfTheWild(Z_Construct_UPackage__Script_BallOfTheWild, TEXT("/Script/BallOfTheWild"), Z_Registration_Info_UPackage__Script_BallOfTheWild, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x324ED939, 0xAE56F7D7));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BallOfTheWild(Z_Construct_UPackage__Script_BallOfTheWild, TEXT("/Script/BallOfTheWild"), Z_Registration_Info_UPackage__Script_BallOfTheWild, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBFE307EB, 0x65655C3D));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

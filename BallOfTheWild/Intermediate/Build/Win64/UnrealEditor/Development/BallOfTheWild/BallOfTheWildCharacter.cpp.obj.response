@@ -1,18 +1,16 @@
 C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\BallOfTheWildCharacter.cpp
 /I .
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source
-/I Runtime
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
+/I Runtime
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -253,6 +251,8 @@ C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheW
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
+/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild
+/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh
