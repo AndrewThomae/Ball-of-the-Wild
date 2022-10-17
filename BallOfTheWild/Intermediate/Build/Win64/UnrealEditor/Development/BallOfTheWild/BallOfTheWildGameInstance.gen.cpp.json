@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgameinstance.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\ballofthewildeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\development\\ballofthewild\\definitions.ballofthewild.h",
+            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\source\\ballofthewild\\public\\ballofthewildgameinstance.h",
+            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgameinstance.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
