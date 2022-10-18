@@ -1302,3 +1302,251 @@ Scale3D: 1.000000 1.000000 1.000000
 [2022.10.18-18.24.48:807][395]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Character_Selection_Auto199D3A2154A30DA94292BD497FE93EB73.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Autosaves/Game/Character_Selection_Auto1.umap'
 [2022.10.18-18.24.48:814][395]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Character_Selection' took 0.075
 [2022.10.18-18.24.48:814][395]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.075
+[2022.10.18-18.26.22:718][736]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2022.10.18-18.26.23:030][736]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2022.10.18-18.26.24:886][760]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2022.10.18-18.26.24:898][760]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/BP_ThirdPersonCharacterD52664B24910B67425CC4BB9E13987E0.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2022.10.18-18.26.25:001][760]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2022.10.18-18.26.25:002][760]LogContentValidation: Display: Validating Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2022.10.18-18.26.26:830][848]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.18-18.26.26:842][848]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.18-18.26.26:842][848]PIE: New page: PIE session: Character_Selection (Oct 18, 2022, 10:26:26 AM)
+[2022.10.18-18.26.26:843][848]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Character_Selection
+[2022.10.18-18.26.26:849][848]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006476s)
+[2022.10.18-18.26.26:849][848]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Character_Selection.Character_Selection to /Game/UEDPIE_0_Character_Selection.Character_Selection (0.006658s)
+[2022.10.18-18.26.26:849][848]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.18-18.26.26:849][848]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.18-18.26.26:850][848]LogAIModule: Creating AISystem for world Character_Selection
+[2022.10.18-18.26.26:851][848]LogPlayLevel: PIE: World Init took: (0.001235s)
+[2022.10.18-18.26.26:907][848]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2022.10.18-18.26.26:911][848]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.18-18.26.26:911][848]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.18-18.26.26:911][848]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.18-18.26.26:912][848]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.18-18.26.26:912][848]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.18-18.26.26:912][848]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.18-18.26.26:916][848]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.18-18.26.26:962][848]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2022.10.18-18.26.26:962][848]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.18-18.26.26:962][848]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.18-18.26.26:962][848]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.18-18.26.26:964][848]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2022.10.18-18.26.26:964][848]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2022.10.18-18.26.26:967][848]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2022.10.18-18.26.26:967][848]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2022.10.18-18.26.26:967][848]LogInit: FAudioDevice initialized.
+[2022.10.18-18.26.26:967][848]LogAudio: Display: Audio Device (ID: 9) registered with world 'Character_Selection'.
+[2022.10.18-18.26.26:988][848]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.18-18.26.26:996][848]LogWorld: Bringing World /Game/UEDPIE_0_Character_Selection.Character_Selection up for play (max tick rate 60) at 2022.10.18-14.26.26
+[2022.10.18-18.26.26:999][848]LogWorld: Bringing up level for play took: 0.010408
+[2022.10.18-18.26.27:002][848]LogOnline: OSS: Created online subsystem instance for: :Context_19
+[2022.10.18-18.26.27:009][848]PIE: Server logged in
+[2022.10.18-18.26.27:010][848]PIE: Play in editor total start time 0.168 seconds.
+[2022.10.18-18.26.33:092][957]LogNet: Browse: /Game/Match-Settings/MatchOptionsLevel
+[2022.10.18-18.26.33:092][957]LogLoad: LoadMap: /Game/Match-Settings/MatchOptionsLevel
+[2022.10.18-18.26.33:092][957]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Character_Selection
+[2022.10.18-18.26.33:094][957]LogWorld: UWorld::CleanupWorld for Character_Selection, bSessionEnded=true, bCleanupResources=true
+[2022.10.18-18.26.33:095][957]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.26.33:152][957]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.18-18.26.33:159][957]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2022.10.18-18.26.33:211][957]LogAudio: Display: Audio Device (ID: 9) registered with world 'MatchOptionsLevel'.
+[2022.10.18-18.26.33:211][957]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.18-18.26.33:211][957]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.18-18.26.33:212][957]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.18-18.26.33:212][957]LogPlayLevel: PIE: World Init took: (0.001282s)
+[2022.10.18-18.26.33:212][957]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.18-18.26.33:213][957]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 60) at 2022.10.18-14.26.33
+[2022.10.18-18.26.33:213][957]LogWorld: Bringing up level for play took: 0.000655
+[2022.10.18-18.26.33:214][957]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.10.18-18.26.33:220][957]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.18-18.26.33:220][957]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.18-18.26.33:221][957]LogLoad: Took 0.128492 seconds to LoadMap(/Game/Match-Settings/MatchOptionsLevel)
+[2022.10.18-18.26.39:066][ 66]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.18-18.26.39:066][ 66]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.18-18.26.39:068][ 66]LogNet: Browse: /Game/Map3
+[2022.10.18-18.26.39:069][ 66]LogLoad: LoadMap: /Game/Map3
+[2022.10.18-18.26.39:069][ 66]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.18-18.26.39:071][ 66]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.18-18.26.39:071][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.26.39:127][ 66]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.18-18.26.39:133][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   3.02ms
+[2022.10.18-18.26.39:477][ 66]LogAudio: Display: Audio Device (ID: 9) registered with world 'Map3'.
+[2022.10.18-18.26.39:477][ 66]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.18-18.26.39:477][ 66]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.18-18.26.39:478][ 66]LogAIModule: Creating AISystem for world Map3
+[2022.10.18-18.26.39:479][ 66]LogPlayLevel: PIE: World Init took: (0.001632s)
+[2022.10.18-18.26.39:479][ 66]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.18-18.26.39:571][ 66]LogWorld: Bringing World /Game/UEDPIE_0_Map3.Map3 up for play (max tick rate 60) at 2022.10.18-14.26.39
+[2022.10.18-18.26.39:572][ 66]LogWorld: Bringing up level for play took: 0.093022
+[2022.10.18-18.26.39:573][ 66]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.10.18-18.26.39:576][ 66]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=0.000 Y=0.000 Z=0.000] for [BP_ThirdPersonCharacter_C]
+[2022.10.18-18.26.39:577][ 66]LogGameMode: Warning: SpawnDefaultPawnAtTransform: Couldn't spawn Pawn of type BP_ThirdPersonCharacter_C at Rotation: Pitch 0.000000 Yaw 0.000000 Roll 0.000000
+Translation: 0.000000 0.000000 0.000000
+Scale3D: 1.000000 1.000000 1.000000
+
+[2022.10.18-18.26.39:582][ 66]LogBlueprintUserMessages: [Map3_C_0] Ball Small
+[2022.10.18-18.26.39:583][ 66]LogChaos: Warning: Attempting to release an actor with a null handle
+[2022.10.18-18.26.39:583][ 66]LogBlueprintUserMessages: [Map3_C_0] Ball added
+[2022.10.18-18.26.39:583][ 66]LogLoad: Took 0.514369 seconds to LoadMap(/Game/Map3)
+[2022.10.18-18.26.41:263][ 89]Cmd: stat fps
+[2022.10.18-18.26.42:351][105]Cmd: stat fps
+[2022.10.18-18.26.43:237][118]Cmd: stat cpuload
+[2022.10.18-18.26.43:238][118]Command not recognized: stat cpuload
+[2022.10.18-18.26.45:151][146]Cmd: stat cpuload
+[2022.10.18-18.26.45:151][146]Command not recognized: stat cpuload
+[2022.10.18-18.26.45:694][154]Cmd: stat cpuload
+[2022.10.18-18.26.45:694][154]Command not recognized: stat cpuload
+[2022.10.18-18.26.45:898][157]Cmd: stat cpuload
+[2022.10.18-18.26.45:898][157]Command not recognized: stat cpuload
+[2022.10.18-18.26.46:238][162]Cmd: stat fps
+[2022.10.18-18.26.47:195][176]Cmd: stat fps
+[2022.10.18-18.26.47:878][186]Cmd: stat fps
+[2022.10.18-18.26.48:490][195]Cmd: stat fps
+[2022.10.18-18.26.50:003][217]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.18-18.26.50:004][217]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map3
+[2022.10.18-18.26.50:007][217]LogWorld: UWorld::CleanupWorld for Map3, bSessionEnded=true, bCleanupResources=true
+[2022.10.18-18.26.50:017][217]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.26.50:146][217]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.18-18.26.50:160][217]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.26.50:255][217]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.18-18.26.50:255][217]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2022.10.18-18.26.50:258][217]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2022.10.18-18.26.50:267][217]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.18-18.26.50:313][217]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
+[2022.10.18-18.26.50:374][218]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2022.10.18-18.27.15:413][119]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2022.10.18-18.27.15:729][119]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2022.10.18-18.27.17:420][152]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2022.10.18-18.27.17:432][152]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/BP_ThirdPersonCharacter70AB768C437CCF8BD0AB00BF3B095FA7.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2022.10.18-18.27.17:515][152]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2022.10.18-18.27.17:515][152]LogContentValidation: Display: Validating Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2022.10.18-18.27.19:948][280]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.10.18-18.27.19:960][280]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.10.18-18.27.19:960][280]PIE: New page: PIE session: Character_Selection (Oct 18, 2022, 10:27:19 AM)
+[2022.10.18-18.27.19:961][280]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Character_Selection
+[2022.10.18-18.27.19:967][280]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006046s)
+[2022.10.18-18.27.19:967][280]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Character_Selection.Character_Selection to /Game/UEDPIE_0_Character_Selection.Character_Selection (0.006200s)
+[2022.10.18-18.27.19:967][280]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.18-18.27.19:967][280]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.18-18.27.19:968][280]LogAIModule: Creating AISystem for world Character_Selection
+[2022.10.18-18.27.19:968][280]LogPlayLevel: PIE: World Init took: (0.001161s)
+[2022.10.18-18.27.20:021][280]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2022.10.18-18.27.20:024][280]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.10.18-18.27.20:024][280]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.10.18-18.27.20:025][280]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.10.18-18.27.20:025][280]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.10.18-18.27.20:025][280]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.10.18-18.27.20:025][280]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.10.18-18.27.20:028][280]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.10.18-18.27.20:065][280]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2022.10.18-18.27.20:066][280]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.10.18-18.27.20:066][280]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.10.18-18.27.20:066][280]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.10.18-18.27.20:067][280]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2022.10.18-18.27.20:067][280]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2022.10.18-18.27.20:069][280]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2022.10.18-18.27.20:069][280]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2022.10.18-18.27.20:069][280]LogInit: FAudioDevice initialized.
+[2022.10.18-18.27.20:069][280]LogAudio: Display: Audio Device (ID: 10) registered with world 'Character_Selection'.
+[2022.10.18-18.27.20:094][280]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.18-18.27.20:099][280]LogWorld: Bringing World /Game/UEDPIE_0_Character_Selection.Character_Selection up for play (max tick rate 60) at 2022.10.18-14.27.20
+[2022.10.18-18.27.20:101][280]LogWorld: Bringing up level for play took: 0.006487
+[2022.10.18-18.27.20:104][280]LogOnline: OSS: Created online subsystem instance for: :Context_20
+[2022.10.18-18.27.20:108][280]PIE: Server logged in
+[2022.10.18-18.27.20:109][280]PIE: Play in editor total start time 0.149 seconds.
+[2022.10.18-18.27.22:495][324]LogNet: Browse: /Game/Match-Settings/MatchOptionsLevel
+[2022.10.18-18.27.22:496][324]LogLoad: LoadMap: /Game/Match-Settings/MatchOptionsLevel
+[2022.10.18-18.27.22:496][324]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Character_Selection
+[2022.10.18-18.27.22:498][324]LogWorld: UWorld::CleanupWorld for Character_Selection, bSessionEnded=true, bCleanupResources=true
+[2022.10.18-18.27.22:499][324]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.27.22:560][324]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.18-18.27.22:568][324]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2022.10.18-18.27.22:613][324]LogAudio: Display: Audio Device (ID: 10) registered with world 'MatchOptionsLevel'.
+[2022.10.18-18.27.22:613][324]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.18-18.27.22:614][324]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.18-18.27.22:614][324]LogAIModule: Creating AISystem for world MatchOptionsLevel
+[2022.10.18-18.27.22:615][324]LogPlayLevel: PIE: World Init took: (0.001669s)
+[2022.10.18-18.27.22:615][324]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.18-18.27.22:616][324]LogWorld: Bringing World /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel.MatchOptionsLevel up for play (max tick rate 60) at 2022.10.18-14.27.22
+[2022.10.18-18.27.22:616][324]LogWorld: Bringing up level for play took: 0.000751
+[2022.10.18-18.27.22:617][324]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.10.18-18.27.22:623][324]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2022.10.18-18.27.22:623][324]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2022.10.18-18.27.22:625][324]LogLoad: Took 0.128807 seconds to LoadMap(/Game/Match-Settings/MatchOptionsLevel)
+[2022.10.18-18.27.28:527][436]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2022.10.18-18.27.28:527][436]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2022.10.18-18.27.28:530][436]LogNet: Browse: /Game/Map3
+[2022.10.18-18.27.28:530][436]LogLoad: LoadMap: /Game/Map3
+[2022.10.18-18.27.28:530][436]LogWorld: BeginTearingDown for /Game/Match-Settings/UEDPIE_0_MatchOptionsLevel
+[2022.10.18-18.27.28:531][436]LogWorld: UWorld::CleanupWorld for MatchOptionsLevel, bSessionEnded=true, bCleanupResources=true
+[2022.10.18-18.27.28:532][436]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.27.28:596][436]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.18-18.27.28:603][436]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2022.10.18-18.27.28:947][436]LogAudio: Display: Audio Device (ID: 10) registered with world 'Map3'.
+[2022.10.18-18.27.28:947][436]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.10.18-18.27.28:948][436]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.10.18-18.27.28:948][436]LogAIModule: Creating AISystem for world Map3
+[2022.10.18-18.27.28:949][436]LogPlayLevel: PIE: World Init took: (0.001820s)
+[2022.10.18-18.27.28:950][436]LogLoad: Game class is 'BallOfTheWildGameMode'
+[2022.10.18-18.27.29:041][436]LogWorld: Bringing World /Game/UEDPIE_0_Map3.Map3 up for play (max tick rate 60) at 2022.10.18-14.27.29
+[2022.10.18-18.27.29:043][436]LogWorld: Bringing up level for play took: 0.092440
+[2022.10.18-18.27.29:043][436]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2022.10.18-18.27.29:047][436]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=0.000 Y=0.000 Z=0.000] for [BP_ThirdPersonCharacter_C]
+[2022.10.18-18.27.29:047][436]LogGameMode: Warning: SpawnDefaultPawnAtTransform: Couldn't spawn Pawn of type BP_ThirdPersonCharacter_C at Rotation: Pitch 0.000000 Yaw 0.000000 Roll 0.000000
+Translation: 0.000000 0.000000 0.000000
+Scale3D: 1.000000 1.000000 1.000000
+
+[2022.10.18-18.27.29:056][436]LogBlueprintUserMessages: [Map3_C_0] Ball Small
+[2022.10.18-18.27.29:057][436]LogChaos: Warning: Attempting to release an actor with a null handle
+[2022.10.18-18.27.29:057][436]LogBlueprintUserMessages: [Map3_C_0] Ball added
+[2022.10.18-18.27.29:057][436]LogLoad: Took 0.527206 seconds to LoadMap(/Game/Map3)
+[2022.10.18-18.27.31:437][468]Cmd: stat Memory
+[2022.10.18-18.27.31:743][473]LogStats: Display: There is no thread with id: 22084. Please add thread metadata for this thread.
+[2022.10.18-18.27.31:743][473]LogStats: Display: There is no thread with id: 21880. Please add thread metadata for this thread.
+[2022.10.18-18.27.34:309][507]Cmd: stat Memory
+[2022.10.18-18.27.36:044][531]Cmd: stat Memory
+[2022.10.18-18.27.44:791][648]Cmd: stat Memory
+[2022.10.18-18.27.46:048][665]Cmd: stat fps
+[2022.10.18-18.27.48:136][693]Cmd: stat fps
+[2022.10.18-18.27.49:044][705]Cmd: stat Memory
+[2022.10.18-18.27.50:781][728]Cmd: stat Memory
+[2022.10.18-18.27.53:287][761]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.18-18.27.53:287][761]LogWorld: BeginTearingDown for /Game/UEDPIE_0_Map3
+[2022.10.18-18.27.53:289][761]LogWorld: UWorld::CleanupWorld for Map3, bSessionEnded=true, bCleanupResources=true
+[2022.10.18-18.27.53:301][761]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.27.53:429][761]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.10.18-18.27.53:440][761]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.10.18-18.27.53:509][761]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.10.18-18.27.53:510][761]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2022.10.18-18.27.53:514][761]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2022.10.18-18.27.53:523][761]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.10.18-18.27.53:572][761]LogUObjectHash: Compacting FUObjectHashTables data took   2.97ms
+[2022.10.18-18.27.53:615][762]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2022.10.18-18.28.04:709][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2022.10.18-18.28.04:732][ 66]LogSavePackage: Moving output files for package: /Game/Character_Selection
+[2022.10.18-18.28.04:734][ 66]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/Character_SelectionED55ECCD4F97E83FD32F5C82168850DA.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Content/Character_Selection.umap'
+[2022.10.18-18.28.04:753][ 66]LogFileHelpers: No new changes to save!
+[2022.10.18-18.28.04:771][ 66]AssetCheck: New page: Asset Save: Character_Selection
+[2022.10.18-18.28.04:771][ 66]LogContentValidation: Display: Validating World /Game/Character_Selection.Character_Selection
+[2022.10.18-18.28.06:452][154]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2022.10.18-18.28.06:812][154]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2022.10.18-18.28.07:786][155]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2022.10.18-18.28.07:788][155]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/BP_ThirdPersonCharacter154C8F2345EF009D6E353C9E789A0CFD.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2022.10.18-18.28.07:807][155]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2022.10.18-18.28.07:808][155]LogContentValidation: Display: Validating Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2022.10.18-18.28.08:668][184]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2022.10.18-18.28.08:671][184]LogSavePackage: Moving '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Saved/BP_ThirdPersonCharacter81673F2A419B2833AAB92382DBA6A59C.tmp' to '../../../../../../Users/hwell/Documents/!School/CS 307/Unreal Project/Ball-of-the-Wild/BallOfTheWild/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2022.10.18-18.28.08:699][184]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2022.10.18-18.28.08:699][184]LogContentValidation: Display: Validating Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
