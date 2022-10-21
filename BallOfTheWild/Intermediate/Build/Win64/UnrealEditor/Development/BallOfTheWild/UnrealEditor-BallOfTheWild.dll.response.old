@@ -51,7 +51,7 @@
 "..\Intermediate\Build\Win64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\HeadMountedDisplay\UnrealEditor-HeadMountedDisplay.lib"
 "..\Plugins\Online\OnlineSubsystem\Intermediate\Build\Win64\UnrealEditor\Development\OnlineSubsystem\UnrealEditor-OnlineSubsystem.lib"
-"..\Plugins\Online\OnlineSubsystemEOS\Intermediate\Build\Win64\UnrealEditor\Development\OnlineSubsystemEOS\UnrealEditor-OnlineSubsystemEOS.lib"
+"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Intermediate\Build\Win64\UnrealEditor\Development\OnlineSubsystemEOS\UnrealEditor-OnlineSubsystemEOS.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"

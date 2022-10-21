@@ -1,17 +1,17 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgamemode.gen.cpp",
+        "Source": "c:\\users\\alexb\\desktop\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgamemode.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\ballofthewildeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "c:\\users\\alexb\\desktop\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\ballofthewildeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\development\\ballofthewild\\definitions.ballofthewild.h",
-            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\source\\ballofthewild\\ballofthewildgamemode.h",
+            "c:\\users\\alexb\\desktop\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\development\\ballofthewild\\definitions.ballofthewild.h",
+            "c:\\users\\alexb\\desktop\\ball-of-the-wild\\ballofthewild\\source\\ballofthewild\\ballofthewildgamemode.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
-            "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgamemode.generated.h"
+            "c:\\users\\alexb\\desktop\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgamemode.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

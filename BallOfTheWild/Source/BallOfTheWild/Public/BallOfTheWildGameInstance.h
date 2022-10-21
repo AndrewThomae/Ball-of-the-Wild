@@ -19,6 +19,10 @@ public:
 
 	virtual void Init();
 
+	void Login();
+
+	void OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
+
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void CreateSession();
 
