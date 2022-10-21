@@ -1,5 +1,4 @@
-BallOfTheWild\.vs\BallOfTheWild\v17\Browse.VC.db
-BallOfTheWild\.vs\BallOfTheWild\v17\Solution.VC.db
+*.db
 *.log
 *.ipch
 *.pch

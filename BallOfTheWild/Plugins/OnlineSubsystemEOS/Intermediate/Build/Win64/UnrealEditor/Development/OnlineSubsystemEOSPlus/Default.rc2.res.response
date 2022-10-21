@@ -64,5 +64,5 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="Third Person Game Template"
 /DPROJECT_PRODUCT_IDENTIFIER=BallOfTheWild
-/fo "C:\Users\alexb\Desktop\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Intermediate\Build\Win64\UnrealEditor\Development\OnlineSubsystemEOSPlus\Default.rc2.res"
+/fo "C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Intermediate\Build\Win64\UnrealEditor\Development\OnlineSubsystemEOSPlus\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

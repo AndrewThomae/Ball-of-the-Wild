@@ -20,13 +20,12 @@ void UBallOfTheWildGameInstance::Init() {
 }
 
 void UBallOfTheWildGameInstance::Login() {
-	UE_LOG(LogTemp, Warning, TEXT("LoggingIn"));
 	if (OnlineSubsystem) {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			FOnlineAccountCredentials Credentials;
-			Credentials.Id = FString();
-			Credentials.Token = FString();
-			Credentials.Type = FString("accountportal");
+			Credentials.Id = FString("127.0.0.1:8081");
+			Credentials.Token = FString("Default");
+			Credentials.Type = FString("developer");
 			Identity->OnLoginCompleteDelegates->AddUObject(this, &UBallOfTheWildGameInstance::OnLoginComplete);
 			Identity->Login(0, Credentials);
 		}
@@ -51,7 +50,7 @@ void UBallOfTheWildGameInstance::CreateSession() {
 }
 
 void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error) {
-	UE_LOG(LogTemp, Warning, TEXT("LoggedIn: %d"), bWasSuccessful);
+	UE_LOG(LogTemp, Warning, TEXT("Logged In: %d"), bWasSuccessful);
 	if (OnlineSubsystem) {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			Identity->ClearOnLoginCompleteDelegates(0, this);
@@ -60,7 +59,7 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 }
 
 void UBallOfTheWildGameInstance::OnCreateSessionComplete(FName SessionName, bool bWasSuccessful) {
-	UE_LOG(LogTemp, Warning, TEXT("Success: %d"), bWasSuccessful);
+	UE_LOG(LogTemp, Warning, TEXT("Session Created: %d"), bWasSuccessful);
 	if (OnlineSubsystem) {
 		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
 			SessionPtr->ClearOnCreateSessionCompleteDelegates(this);
