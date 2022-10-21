@@ -2,3 +2,4 @@
 *.log
 *.ipch
 *.pch
+*CrashReportClient.ini
