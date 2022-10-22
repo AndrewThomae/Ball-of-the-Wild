@@ -316,4 +316,7 @@
       <Filter>Source\BallOfTheWild\Public</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.0\Engine\Source\Runtime\Core\Public\HAL\Platform.h" />
+  </ItemGroup>
 </Project>

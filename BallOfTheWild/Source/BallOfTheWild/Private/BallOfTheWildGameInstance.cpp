@@ -7,6 +7,7 @@
 #include "OnlineSubsystem.h"
 #include "OnlineSessionSettings.h"
 #include "Interfaces/OnlineIdentityInterface.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 UBallOfTheWildGameInstance::UBallOfTheWildGameInstance() {
 
@@ -38,13 +39,26 @@ void UBallOfTheWildGameInstance::CreateSession() {
 			FOnlineSessionSettings SessionSettings;
 			SessionSettings.bIsDedicated = false;
 			SessionSettings.bShouldAdvertise = true;
-			SessionSettings.bIsLANMatch = true;
+			SessionSettings.bIsLANMatch = false;
 			SessionSettings.NumPublicConnections = 5;
 			SessionSettings.bAllowJoinInProgress = true;
 			SessionSettings.bAllowJoinViaPresence = true;
+			SessionSettings.bUsesPresence = true;
+			SessionSettings.bUseLobbiesIfAvailable = true;
+
+			SessionSettings.Set(SEARCH_KEYWORDS, FString("EXLobby"), EOnlineDataAdvertisementType::ViaOnlineService);
 
 			SessionPtr->OnCreateSessionCompleteDelegates.AddUObject(this, &UBallOfTheWildGameInstance::OnCreateSessionComplete);
 			SessionPtr->CreateSession(0, FName("Test Session"), SessionSettings);
+		}
+	}
+}
+
+void UBallOfTheWildGameInstance::DestroySession() {
+	if (OnlineSubsystem) {
+		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
+			SessionPtr->OnDestroySessionCompleteDelegates.AddUObject(this, &UBallOfTheWildGameInstance::OnDestroySessionComplete);
+			SessionPtr->DestroySession(FName("Test Session"));
 		}
 	}
 }
@@ -63,6 +77,16 @@ void UBallOfTheWildGameInstance::OnCreateSessionComplete(FName SessionName, bool
 	if (OnlineSubsystem) {
 		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
 			SessionPtr->ClearOnCreateSessionCompleteDelegates(this);
+		}
+	}
+}
+
+void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, bool bWasSuccessful) {
+	UE_LOG(LogTemp, Warning, TEXT("Session Destroyed: %d"), bWasSuccessful);
+	if (OnlineSubsystem) {
+		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
+			SessionPtr->ClearOnDestroySessionCompleteDelegates(this);
+			UKismetSystemLibrary::QuitGame(this,nullptr,EQuitPreference::Quit,0);
 		}
 	}
 }

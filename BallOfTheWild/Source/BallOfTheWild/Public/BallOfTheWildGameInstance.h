@@ -26,7 +26,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void CreateSession();
 
+	UFUNCTION(BlueprintCallable, Category = "Sessions")
+	void DestroySession();
+
+
 	void OnCreateSessionComplete(FName SessionName, bool bWasSuccessful);
+
+	void OnDestroySessionComplete(FName SessionName,bool bWasSuccessful);
 
 protected:
 	class IOnlineSubsystem* OnlineSubsystem;
