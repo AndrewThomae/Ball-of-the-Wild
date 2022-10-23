@@ -3,7 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Interfaces/OnlineIdentityInterface.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "Engine/GameInstance.h"
+#include "Engine/NetworkDelegates.h"
 #include "BallOfTheWildGameInstance.generated.h"
 
 /**
@@ -19,7 +22,7 @@ public:
 
 	virtual void Init();
 
-	void Login();
+	void Login(int c);
 
 	void OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
 
@@ -28,6 +31,14 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void DestroySession();
+	TSharedPtr<class FOnlineSessionSearch> SearchSettings;
+
+	UFUNCTION(BlueprintCallable, Category = "Sessions")
+	void FindSessions();
+
+	void OnFindSessionComplete(bool bWasSuccessful);
+
+	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 
