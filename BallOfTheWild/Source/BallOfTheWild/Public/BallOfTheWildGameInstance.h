@@ -39,7 +39,7 @@ public:
 
 	void OnFindSessionComplete(bool bWasSuccessful);
 
-	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
+	//void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 

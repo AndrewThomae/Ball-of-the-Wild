@@ -128,8 +128,10 @@ void UBallOfTheWildGameInstance::OnFindSessionComplete(bool bWasSuccessful) {
 		UE_LOG(LogTemp, Warning, TEXT("Lobbies Found: %d"), SearchSettings->SearchResults.Num()); if (OnlineSubsystem) {
 			if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
 				if (SearchSettings->SearchResults.Num()) {
-					SessionPtr->OnJoinSessionCompleteDelegates.AddUObject(this, &UBallOfTheWildGameInstance::OnJoinSessionComplete);
-					SessionPtr->JoinSession(userNum, FName("Test Session"), SearchSettings->SearchResults[0]);
+					FString ConnectionInfo = FString();
+					SessionPtr->GetResolvedConnectString(FName("Test Session"), ConnectionInfo);
+					//SessionPtr->OnJoinSessionCompleteDelegates.AddUObject(this, &UBallOfTheWildGameInstance::OnJoinSessionComplete);
+					//SessionPtr->JoinSession(userNum, FName("Test Session"), SearchSettings->SearchResults[0]);
 				}
 			}
 		}
@@ -141,11 +143,9 @@ void UBallOfTheWildGameInstance::OnFindSessionComplete(bool bWasSuccessful) {
 	}
 }
 
-void UBallOfTheWildGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result) {
+/*void UBallOfTheWildGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result) {
 	if (OnlineSubsystem && Result == EOnJoinSessionCompleteResult::Success) {
 		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
-			FString ConnectionInfo = FString();
-			SessionPtr->GetResolvedConnectString(FName("Test Session"), ConnectionInfo);
 			if (!ConnectionInfo.IsEmpty()) {
 				if (APlayerController* PC = UGameplayStatics::GetPlayerController(GetWorld(), 0)) {
 					PC->ClientTravel(ConnectionInfo, ETravelType::TRAVEL_Absolute);
@@ -158,7 +158,7 @@ void UBallOfTheWildGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoi
 			}
 		}
 	}
-}
+}*/
 
 FString UBallOfTheWildGameInstance::GetName(const FUniqueNetId& UserId)
 {
