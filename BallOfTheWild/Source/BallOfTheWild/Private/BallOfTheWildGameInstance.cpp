@@ -27,10 +27,10 @@ void UBallOfTheWildGameInstance::Login(int c) {
 			FOnlineAccountCredentials Credentials;
 			Credentials.Id = FString("127.0.0.1:8081");
 			if (c != 0) {
-				Credentials.Token = FString("Default1");
+				Credentials.Token = FString("Default");
 			}
 			else {
-				Credentials.Token = FString("Default1");
+				Credentials.Token = FString("Default");
 			}
 			
 			Credentials.Type = FString("developer");
@@ -43,6 +43,7 @@ void UBallOfTheWildGameInstance::Login(int c) {
 void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error) {
 	UE_LOG(LogTemp, Warning, TEXT("Logged In: %d"), bWasSuccessful);
 	if (bWasSuccessful) {
+		userNum = LocalUserNum;
 		if (OnlineSubsystem) {
 			if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 				Identity->ClearOnLoginCompleteDelegates(0, this);
@@ -128,7 +129,7 @@ void UBallOfTheWildGameInstance::OnFindSessionComplete(bool bWasSuccessful) {
 			if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
 				if (SearchSettings->SearchResults.Num()) {
 					SessionPtr->OnJoinSessionCompleteDelegates.AddUObject(this, &UBallOfTheWildGameInstance::OnJoinSessionComplete);
-					SessionPtr->JoinSession(0, FName("Test Session"), SearchSettings->SearchResults[0]);
+					SessionPtr->JoinSession(userNum, FName("Test Session"), SearchSettings->SearchResults[0]);
 				}
 			}
 		}

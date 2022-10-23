@@ -23,6 +23,7 @@ public:
 	virtual void Init();
 
 	void Login(int c);
+	int32 userNum;
 
 	void OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
 
