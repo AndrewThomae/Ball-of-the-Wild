@@ -63,11 +63,22 @@ void UBallOfTheWildGameInstance::DestroySession() {
 	}
 }
 
+FString UBallOfTheWildGameInstance::GetName(const FUniqueNetId& UserId)
+{
+	IOnlineIdentityPtr IdentityPtr = OnlineSubsystem->GetIdentityInterface();
+	return IdentityPtr->GetPlayerNickname(UserId);
+}
+
+FString UBallOfTheWildGameInstance::GetUserName() {
+	return Name;
+}
+
 void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error) {
 	UE_LOG(LogTemp, Warning, TEXT("Logged In: %d"), bWasSuccessful);
 	if (OnlineSubsystem) {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			Identity->ClearOnLoginCompleteDelegates(0, this);
+			Name = GetName(UserId);
 		}
 	}
 }

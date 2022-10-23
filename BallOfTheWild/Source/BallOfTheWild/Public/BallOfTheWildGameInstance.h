@@ -29,6 +29,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void DestroySession();
 
+	virtual FString GetName(const FUniqueNetId& UserId);
+
+	UFUNCTION(BlueprintCallable, Category = "Multiplayer")
+	FString GetUserName();
+
+	FString Name;
 
 	void OnCreateSessionComplete(FName SessionName, bool bWasSuccessful);
 

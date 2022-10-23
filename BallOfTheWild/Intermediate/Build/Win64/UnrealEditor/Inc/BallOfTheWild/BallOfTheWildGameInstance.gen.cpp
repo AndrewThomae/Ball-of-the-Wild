@@ -14,6 +14,13 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 	ENGINE_API UClass* Z_Construct_UClass_UGameInstance();
 	UPackage* Z_Construct_UPackage__Script_BallOfTheWild();
 // End Cross Module References
+	DEFINE_FUNCTION(UBallOfTheWildGameInstance::execGetUserName)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->GetUserName();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UBallOfTheWildGameInstance::execDestroySession)
 	{
 		P_FINISH;
@@ -34,6 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CreateSession", &UBallOfTheWildGameInstance::execCreateSession },
 			{ "DestroySession", &UBallOfTheWildGameInstance::execDestroySession },
+			{ "GetUserName", &UBallOfTheWildGameInstance::execGetUserName },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -83,6 +91,39 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics
+	{
+		struct BallOfTheWildGameInstance_eventGetUserName_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BallOfTheWildGameInstance_eventGetUserName_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Multiplayer" },
+		{ "ModuleRelativePath", "Public/BallOfTheWildGameInstance.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBallOfTheWildGameInstance, nullptr, "GetUserName", nullptr, nullptr, sizeof(Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::BallOfTheWildGameInstance_eventGetUserName_Parms), Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UBallOfTheWildGameInstance);
 	UClass* Z_Construct_UClass_UBallOfTheWildGameInstance_NoRegister()
 	{
@@ -105,6 +146,7 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UBallOfTheWildGameInstance_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession, "CreateSession" }, // 4283437789
 		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_DestroySession, "DestroySession" }, // 2796930757
+		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName, "GetUserName" }, // 869839098
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBallOfTheWildGameInstance_Statics::Class_MetaDataParams[] = {
@@ -149,9 +191,9 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBallOfTheWildGameInstance, UBallOfTheWildGameInstance::StaticClass, TEXT("UBallOfTheWildGameInstance"), &Z_Registration_Info_UClass_UBallOfTheWildGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBallOfTheWildGameInstance), 4237609582U) },
+		{ Z_Construct_UClass_UBallOfTheWildGameInstance, UBallOfTheWildGameInstance::StaticClass, TEXT("UBallOfTheWildGameInstance"), &Z_Registration_Info_UClass_UBallOfTheWildGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBallOfTheWildGameInstance), 2820529227U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_2170710495(TEXT("/Script/BallOfTheWild"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_4036481024(TEXT("/Script/BallOfTheWild"),
 		Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
