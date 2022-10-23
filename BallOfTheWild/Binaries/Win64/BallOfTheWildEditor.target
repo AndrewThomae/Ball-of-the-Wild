@@ -49,6 +49,10 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/EOSSDK-Win64-Shipping.dll",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/oo2tex_win64_2.9.5.dll",
 			"Type": "RequiredResource"
 		},
@@ -2565,6 +2569,14 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Online/EOSShared/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/EOSShared/Binaries/Win64/UnrealEditor-EOSShared.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Online/Experimental/OnlineServices/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2610,6 +2622,22 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UnrealEditor-OnlineSubsystemUtils.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/SocketSubsystemEOS/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/SocketSubsystemEOS/Binaries/Win64/UnrealEditor-SocketSubsystemEOS.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/VoiceChat/EOSVoiceChat/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/VoiceChat/EOSVoiceChat/Binaries/Win64/UnrealEditor-EOSVoiceChat.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -2966,6 +2994,26 @@
 		},
 		{
 			"Path": "$(ProjectDir)/Binaries/Win64/UnrealEditor-BallOfTheWild.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/Binaries/Win64/UnrealEditor-OnlineSubsystemEOS.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/Binaries/Win64/UnrealEditor-OnlineSubsystemEOS.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/Binaries/Win64/UnrealEditor-OnlineSubsystemEOSPlus.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/Binaries/Win64/UnrealEditor-OnlineSubsystemEOSPlus.pdb",
 			"Type": "SymbolFile"
 		}
 	],
@@ -20891,6 +20939,10 @@
 			"Type": "DebugNonUFS"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/EOSSDK-Win64-Shipping.dll",
+			"Type": "NonUFS"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/EpicWebHelper.exe",
 			"Type": "NonUFS"
 		},
@@ -23327,6 +23379,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Online/EOSShared/EOSShared.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Online/Experimental/OnlineServices/OnlineServices.uplugin",
 			"Type": "UFS"
 		},
@@ -23348,6 +23404,14 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Online/OnlineSubsystemUtils/OnlineSubsystemUtils.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/SocketSubsystemEOS/SocketSubsystemEOS.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Online/VoiceChat/EOSVoiceChat/EOSVoiceChat.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -23480,6 +23544,10 @@
 		},
 		{
 			"Path": "$(ProjectDir)/BallOfTheWild.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/OnlineSubsystemEOS.uplugin",
 			"Type": "UFS"
 		}
 	],
