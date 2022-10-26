@@ -13,6 +13,9 @@ class ABallOfTheWildGameMode : public AGameModeBase
 
 public:
 	ABallOfTheWildGameMode();
+	int playerCount = 1;
+
+	virtual void PostLogin(APlayerController* NewPlayer) override;
 };
 
 

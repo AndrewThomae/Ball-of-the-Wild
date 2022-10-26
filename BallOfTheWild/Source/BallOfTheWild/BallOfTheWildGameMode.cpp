@@ -2,6 +2,7 @@
 
 #include "BallOfTheWildGameMode.h"
 #include "BallOfTheWildCharacter.h"
+#include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"
 
 ABallOfTheWildGameMode::ABallOfTheWildGameMode()
@@ -12,4 +13,12 @@ ABallOfTheWildGameMode::ABallOfTheWildGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+}
+
+void ABallOfTheWildGameMode::PostLogin(APlayerController* NewPlayer) {
+	if (playerCount > 1) {
+		FActorSpawnParameters SpawnInfo;
+		GetWorld()->SpawnActor<APawn>(UGameplayStatics::GetActorOfClass(GetWorld(), DefaultPawnClass)->GetClass(), SpawnInfo);
+	}
+	playerCount++;
 }
