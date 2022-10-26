@@ -18,6 +18,7 @@ ABallOfTheWildGameMode::ABallOfTheWildGameMode()
 void ABallOfTheWildGameMode::PostLogin(APlayerController* NewPlayer) {
 	if (playerCount > 1) {
 		FActorSpawnParameters SpawnInfo;
+		SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 		GetWorld()->SpawnActor<APawn>(UGameplayStatics::GetActorOfClass(GetWorld(), DefaultPawnClass)->GetClass(), SpawnInfo);
 	}
 	playerCount++;
