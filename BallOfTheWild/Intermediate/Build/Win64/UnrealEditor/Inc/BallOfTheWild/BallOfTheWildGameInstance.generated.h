@@ -16,18 +16,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_18_SPARSE_DATA
 #define FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_18_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetUserName); \
-	DECLARE_FUNCTION(execFindSessions); \
-	DECLARE_FUNCTION(execDestroySession); \
-	DECLARE_FUNCTION(execCreateSession);
+	DECLARE_FUNCTION(execGetUserName);
 
 
 #define FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetUserName); \
-	DECLARE_FUNCTION(execFindSessions); \
-	DECLARE_FUNCTION(execDestroySession); \
-	DECLARE_FUNCTION(execCreateSession);
+	DECLARE_FUNCTION(execGetUserName);
 
 
 #define FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_18_INCLASS_NO_PURE_DECLS \
