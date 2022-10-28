@@ -32,7 +32,7 @@ void UBallOfTheWildGameInstance::Login(int c) {
 			else {
 				Credentials.Token = FString("Default");
 			}
-			
+
 			Credentials.Type = FString("developer");
 			Identity->OnLoginCompleteDelegates->AddUObject(this, &UBallOfTheWildGameInstance::OnLoginComplete);
 			Identity->Login(0, Credentials);
@@ -59,23 +59,25 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 	}
 }
 
-
-/*void UBallOfTheWildGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result) {
-	if (OnlineSubsystem && Result == EOnJoinSessionCompleteResult::Success) {
+void UBallOfTheWildGameInstance::DestroySession() {
+	if (OnlineSubsystem) {
 		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
-			if (!ConnectionInfo.IsEmpty()) {
-				if (APlayerController* PC = UGameplayStatics::GetPlayerController(GetWorld(), 0)) {
-					PC->ClientTravel(ConnectionInfo, ETravelType::TRAVEL_Absolute);
-					FURL NewURL(nullptr, *ConnectionInfo, ETravelType::TRAVEL_Absolute);
-					FString BrowseError;
-					if (GEngine->Browse(GEngine->GetWorldContextFromWorldChecked(this->GetWorld()), NewURL, BrowseError) == EBrowseReturnVal::Failure) {
-						UE_LOG(LogTemp, Error, TEXT("Failed to start browse: %s"), *BrowseError);
-					}
-				}
-			}
+			SessionPtr->OnDestroySessionCompleteDelegates.AddUObject(this, &UBallOfTheWildGameInstance::OnDestroySessionComplete);
+			SessionPtr->DestroySession(FName("Test Session"));
 		}
 	}
-}*/
+}
+
+void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, bool bWasSuccessful) {
+	UE_LOG(LogTemp, Warning, TEXT("Session Destroyed: %d"), bWasSuccessful);
+	if (OnlineSubsystem) {
+		if (IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface()) {
+			SessionPtr->ClearOnDestroySessionCompleteDelegates(this);
+			UKismetSystemLibrary::QuitGame(this, nullptr, EQuitPreference::Quit, 0);
+		}
+	}
+}
+
 
 FString UBallOfTheWildGameInstance::GetName(const FUniqueNetId& UserId)
 {

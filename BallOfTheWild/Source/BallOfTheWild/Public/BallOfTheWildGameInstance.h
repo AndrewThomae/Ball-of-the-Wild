@@ -10,13 +10,13 @@
 #include "BallOfTheWildGameInstance.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class BALLOFTHEWILD_API UBallOfTheWildGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
-	
+
 public:
 	UBallOfTheWildGameInstance();
 
@@ -27,15 +27,20 @@ public:
 
 	void OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
 
+	UFUNCTION(BlueprintCallable, Category = "Sessions")
+		void DestroySession();
 
+	//void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 
 	UFUNCTION(BlueprintCallable, Category = "Multiplayer")
-	FString GetUserName();
+		FString GetUserName();
 
 	FString Name;
 
+
+	void OnDestroySessionComplete(FName SessionName, bool bWasSuccessful);
 
 protected:
 	class IOnlineSubsystem* OnlineSubsystem;
