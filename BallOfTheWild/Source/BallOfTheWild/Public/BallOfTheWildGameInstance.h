@@ -22,7 +22,8 @@ public:
 
 	virtual void Init();
 
-	void Login(int c);
+	UFUNCTION(BlueprintCallable, Category = "Sessions")
+	void Login(FString name);
 	int32 userNum;
 
 	void OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
@@ -30,7 +31,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 		void DestroySession();
 
-	//void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 

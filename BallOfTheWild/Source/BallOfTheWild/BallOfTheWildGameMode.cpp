@@ -14,3 +14,7 @@ ABallOfTheWildGameMode::ABallOfTheWildGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+void ABallOfTheWildGameMode::NewWorld() {
+	GetWorld()->SeamlessTravel("/Game/MultiplayerMap1", true);
+}

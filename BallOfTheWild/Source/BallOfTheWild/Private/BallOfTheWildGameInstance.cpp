@@ -18,20 +18,14 @@ void UBallOfTheWildGameInstance::Init() {
 	Super::Init();
 
 	OnlineSubsystem = IOnlineSubsystem::Get();
-	Login(0);
 }
 
-void UBallOfTheWildGameInstance::Login(int c) {
+void UBallOfTheWildGameInstance::Login(FString name) {
 	if (OnlineSubsystem) {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			FOnlineAccountCredentials Credentials;
 			Credentials.Id = FString("127.0.0.1:8081");
-			if (c != 0) {
-				Credentials.Token = FString("Default");
-			}
-			else {
-				Credentials.Token = FString("Default");
-			}
+			Credentials.Token = name;
 
 			Credentials.Type = FString("developer");
 			Identity->OnLoginCompleteDelegates->AddUObject(this, &UBallOfTheWildGameInstance::OnLoginComplete);
@@ -55,7 +49,6 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			Identity->ClearOnLoginCompleteDelegates(0, this);
 		}
-		Login(1);
 	}
 }
 

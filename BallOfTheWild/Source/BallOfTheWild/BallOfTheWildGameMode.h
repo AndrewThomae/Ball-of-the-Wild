@@ -13,6 +13,9 @@ class ABallOfTheWildGameMode : public AGameModeBase
 
 public:
 	ABallOfTheWildGameMode();
+
+	UFUNCTION(BlueprintCallable, Category = "Multiplayer")
+		void NewWorld();
 };
 
 
