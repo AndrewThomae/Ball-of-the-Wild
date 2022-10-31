@@ -1,1 +1,1 @@
-start "" "C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\BallOfTheWild.uproject" -game -ResX=1920 -ResY=1080 -log
+start "" "C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Users\Wes Turnbull\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\BallOfTheWild.uproject" -game -ResX=1920 -ResY=1080 -log
