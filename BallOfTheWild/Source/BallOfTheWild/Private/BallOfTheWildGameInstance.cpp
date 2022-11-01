@@ -9,6 +9,7 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "Interfaces/OnlineSessionInterface.h"
+#include <eos_stats.h>
 
 UBallOfTheWildGameInstance::UBallOfTheWildGameInstance() {
 
@@ -42,6 +43,20 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 			if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 				Identity->ClearOnLoginCompleteDelegates(0, this);
 				Name = GetName(UserId);
+
+				EOS_Stats_IngestStatOptions StatsIngestOptions = {};
+				StatsIngestOptions.ApiVersion = EOS_STATS_INGESTSTAT_API_LATEST;
+				StatsIngestOptions.LocalUserId = "dc1502f4f8484d7c8e0db9d749ed6f9b";
+				StatsIngestOptions.TargetUserId = 
+				StatsIngestOptions.StatsCount = 1;
+
+				EOS_Stats_IngestData* IngestData = new EOS_Stats_IngestData[StatsIngestOptions.StatsCount];
+
+				IngestData[0].ApiVersion = EOS_STATS_INGESTDATA_API_LATEST;
+				IngestData[0].StatName = "Experience";
+				IngestData[0].IngestAmount = 100;
+
+				StatsIngestOptions.Stats = IngestData;
 			}
 		}
 	}

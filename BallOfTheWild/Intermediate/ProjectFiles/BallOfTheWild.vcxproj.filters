@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\BallOfTheWild.uproject" />
     <Filter Include="Source">
@@ -12,22 +12,23 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.gitattributes" />
+    <None Include="..\..\start.bat" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
     </None>
     <Filter Include="Config\HoloLens">
@@ -276,31 +277,31 @@
     <Filter Include="Source\BallOfTheWild">
       <UniqueIdentifier>{89521225-F09B-3D02-86C8-7C0822C1B68E}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Source\BallOfTheWild\BallOfTheWild.Build.cs">
+    <ClCompile Include="..\..\Source\BallOfTheWild\MessageParser.cpp">
       <Filter>Source\BallOfTheWild</Filter>
-    </None>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BallOfTheWild\MessageParser.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\BallOfTheWild\BallOfTheWild.cpp">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BallOfTheWild\BallOfTheWildCharacter.cpp">
       <Filter>Source\BallOfTheWild</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWild.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\BallOfTheWild\BallOfTheWildCharacter.cpp">
-      <Filter>Source\BallOfTheWild</Filter>
-    </ClCompile>
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWildCharacter.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
+    <None Include="..\..\Source\BallOfTheWild\BallOfTheWild.Build.cs">
+      <Filter>Source\BallOfTheWild</Filter>
+    </None>
     <ClCompile Include="..\..\Source\BallOfTheWild\BallOfTheWildGameMode.cpp">
       <Filter>Source\BallOfTheWild</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWildGameMode.h">
-      <Filter>Source\BallOfTheWild</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\BallOfTheWild\MessageParser.cpp">
-      <Filter>Source\BallOfTheWild</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\BallOfTheWild\MessageParser.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
     <Filter Include="Source\BallOfTheWild\Private">
@@ -315,8 +316,17 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\Public\BallOfTheWildGameInstance.h">
       <Filter>Source\BallOfTheWild\Public</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.0\Engine\Source\Runtime\Core\Public\HAL\Platform.h" />
+    <Filter Include="Source\BallOfTheWild\.vs">
+      <UniqueIdentifier>{4DBA20FB-1FF6-3941-9B6B-48136DF56364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BallOfTheWild\.vs\BallOfTheWild">
+      <UniqueIdentifier>{6045C654-D9DE-312E-81A4-7C35D048D110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BallOfTheWild\.vs\BallOfTheWild\v16">
+      <UniqueIdentifier>{3202BF21-DC06-3CE4-B391-FBEB8E8150D7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BallOfTheWild\.vs\BallOfTheWild\v16\Browse.VC.db">
+      <Filter>Source\BallOfTheWild\.vs\BallOfTheWild\v16</Filter>
+    </None>
   </ItemGroup>
 </Project>
