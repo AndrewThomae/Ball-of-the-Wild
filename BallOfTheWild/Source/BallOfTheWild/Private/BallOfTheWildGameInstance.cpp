@@ -9,6 +9,9 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "Interfaces/OnlineSessionInterface.h"
+#include "eos_init.h"
+
+#include <eos_sdk.h>
 #include <eos_stats.h>
 
 UBallOfTheWildGameInstance::UBallOfTheWildGameInstance() {
@@ -43,11 +46,28 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 			if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 				Identity->ClearOnLoginCompleteDelegates(0, this);
 				Name = GetName(UserId);
+				FString LocalId = *UserId.ToString();
+				int32 index = LocalId.Find("|");
+				FString LocalId2 = LocalId.LeftChop(LocalId.Len() - index);
+				UE_LOG(LogTemp, Warning, TEXT("Logged In: %s, userNum: %d, LocalId: %s, Index: %d, New LocalId: %s"), *Name, LocalUserNum, *UserId.ToString(), index, *LocalId2);
+				
+				EOS_InitializeOptions SDKOptions = {};
+				SDKOptions.ApiVersion = EOS_INITIALIZE_API_LATEST;
+				SDKOptions.AllocateMemoryFunction = nullptr;
+				SDKOptions.ReallocateMemoryFunction = nullptr;
+				SDKOptions.ReleaseMemoryFunction = nullptr;
+				SDKOptions.ProductName = "Ball of the Wild";
+				SDKOptions.ProductVersion = "1.0";
+				SDKOptions.Reserved = nullptr;
+				SDKOptions.SystemInitializeOptions = nullptr;
+				SDKOptions.OverrideThreadAffinity = nullptr;
+
+				EOS_EResult InitResult = EOS_Initialize(&SDKOptions);
 
 				EOS_Stats_IngestStatOptions StatsIngestOptions = {};
 				StatsIngestOptions.ApiVersion = EOS_STATS_INGESTSTAT_API_LATEST;
-				StatsIngestOptions.LocalUserId = "dc1502f4f8484d7c8e0db9d749ed6f9b";
-				StatsIngestOptions.TargetUserId = 
+				StatsIngestOptions.LocalUserId = (EOS_ProductUserId) LocalId2.ToBlob;
+				StatsIngestOptions.TargetUserId = (EOS_ProductUserId)LocalId2.ToBlob;
 				StatsIngestOptions.StatsCount = 1;
 
 				EOS_Stats_IngestData* IngestData = new EOS_Stats_IngestData[StatsIngestOptions.StatsCount];
@@ -57,6 +77,21 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 				IngestData[0].IngestAmount = 100;
 
 				StatsIngestOptions.Stats = IngestData;
+
+				EOS_Platform_Options PlatformOptions = {};
+				PlatformOptions.ApiVersion = EOS_PLATFORM_OPTIONS_API_LATEST;
+				PlatformOptions.bIsServer = false;
+				PlatformOptions.EncryptionKey = "1111111111111111111111111111111111111111111111111111111111111111";
+				PlatformOptions.OverrideCountryCode = nullptr;
+				PlatformOptions.OverrideLocaleCode = nullptr;
+				PlatformOptions.Flags = EOS_PF_WINDOWS_ENABLE_OVERLAY_D3D9 | EOS_PF_WINDOWS_ENABLE_OVERLAY_D3D10 | EOS_PF_WINDOWS_ENABLE_OVERLAY_OPENGL; // Enable overlay support for D3D9/10 and OpenGL. This sample uses D3D11 or SDL.
+				static char Buffer[1024] = { 0 };
+				PlatformOptions.CacheDirectory = Buffer;
+
+				EOS_HPlatform PlatformHandle = EOS_Platform_Create(&PlatformOptions);
+				EOS_HStats StatsHandle = EOS_Platform_GetStatsInterface(PlatformHandle);
+
+				EOS_Stats_IngestStat(StatsHandle, &StatsIngestOptions, nullptr, NULL);
 			}
 		}
 	}

@@ -304,6 +304,21 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWildGameMode.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\BallOfTheWild\eos_integratedplatform_types.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BallOfTheWild\eos_types.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BallOfTheWild\eos_base.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BallOfTheWild\eos_common.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BallOfTheWild\eos_init.h">
+      <Filter>Source\BallOfTheWild</Filter>
+    </ClInclude>
     <Filter Include="Source\BallOfTheWild\Private">
       <UniqueIdentifier>{84015DAC-010B-3E87-9F8F-0992012D97A6}</UniqueIdentifier>
     </Filter>
