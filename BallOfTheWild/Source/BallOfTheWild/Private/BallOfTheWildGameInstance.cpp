@@ -48,7 +48,7 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 				Name = GetName(UserId);
 				FString LocalId = *UserId.ToString();
 				int32 index = LocalId.Find("|");
-				FString LocalId2 = LocalId.LeftChop(LocalId.Len() - index);
+				FString LocalId2 = LocalId.RightChop(index);
 				UE_LOG(LogTemp, Warning, TEXT("Logged In: %s, userNum: %d, LocalId: %s, Index: %d, New LocalId: %s"), *Name, LocalUserNum, *UserId.ToString(), index, *LocalId2);
 				
 				EOS_InitializeOptions SDKOptions = {};
