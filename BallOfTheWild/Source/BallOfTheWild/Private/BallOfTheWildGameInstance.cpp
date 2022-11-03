@@ -9,6 +9,8 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "Interfaces/OnlineSessionInterface.h"
+#include "Interfaces/OnlineStatsInterface.h"
+#include "OnlineSubsystemUtils.h"
 #include "eos_init.h"
 
 #include <eos_sdk.h>
@@ -51,7 +53,42 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 				FString LocalId2 = LocalId.RightChop(index);
 				UE_LOG(LogTemp, Warning, TEXT("Logged In: %s, userNum: %d, LocalId: %s, Index: %d, New LocalId: %s"), *Name, LocalUserNum, *UserId.ToString(), index, *LocalId2);
 				
-				EOS_InitializeOptions SDKOptions = {};
+
+				IOnlineSubsystem* Subsystem = Online::GetSubsystem(this->GetWorld());
+				IOnlineStatsPtr StatsInterface = Subsystem->GetStatsInterface();
+
+				FOnlineStatsUserUpdatedStats Stat = FOnlineStatsUserUpdatedStats(Identity->GetUniquePlayerId(0).ToSharedRef());
+
+				// For each of the stats to upload, provide the StatName (matching what
+				// is defined in the Epic Online Services portal) and the int32 value.
+				// The EOnlineStatModificationType is ignored, as the stat type is defined
+				// in the portal.
+				//
+				// You can add multiple entries to the Stats property to send more than one
+				// stat value in a single request.
+				Stat.Stats.Add("Experience", FOnlineStatUpdate(100, FOnlineStatUpdate::EOnlineStatModificationType::Unknown));
+
+				TArray<FOnlineStatsUserUpdatedStats> Stats;
+				Stats.Add(Stat);
+				FString PlayerId = (*Identity->GetUniquePlayerId(0)).ToString();
+				UE_LOG(LogTemp, Warning, TEXT("UniquePlayerId: %s"), *PlayerId);
+				StatsInterface->UpdateStats(
+					Identity->GetUniquePlayerId(0).ToSharedRef(),
+					Stats,
+					FOnlineStatsUpdateStatsComplete::CreateLambda([](
+						const FOnlineError& ResultState)
+						{
+							// Check `ResultState.bSucceeded`.
+						}));
+
+
+
+
+
+
+
+
+				/*EOS_InitializeOptions SDKOptions = {};
 				SDKOptions.ApiVersion = EOS_INITIALIZE_API_LATEST;
 				SDKOptions.AllocateMemoryFunction = nullptr;
 				SDKOptions.ReallocateMemoryFunction = nullptr;
@@ -91,7 +128,7 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 				EOS_HPlatform PlatformHandle = EOS_Platform_Create(&PlatformOptions);
 				EOS_HStats StatsHandle = EOS_Platform_GetStatsInterface(PlatformHandle);
 
-				EOS_Stats_IngestStat(StatsHandle, &StatsIngestOptions, nullptr, NULL);
+				EOS_Stats_IngestStat(StatsHandle, &StatsIngestOptions, nullptr, NULL);*/
 			}
 		}
 	}

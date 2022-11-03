@@ -8,7 +8,7 @@ public class BallOfTheWild : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "OnlineSubsystem", "OnlineSubsystemEOS" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "OnlineSubsystem", "OnlineSubsystemEOS", "OnlineSubsystemUtils" });
 		//PublicLibraryPaths.Add("../SDK/bin");
 		//PublicDelayLoadDLLs.Add("D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\EOSSDK-Win64-Shipping.dll");
 		//PublicAdditionalLibraries.Add("D: \UnrealEngine\Ball-of-the-Wild\BallOfTheWild\EOSSDK-Win64-shipping.lib");
