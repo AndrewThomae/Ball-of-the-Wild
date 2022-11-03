@@ -44,5 +44,7 @@ public:
 
 protected:
 	class IOnlineSubsystem* OnlineSubsystem;
+	class IOnlineSubsystem* Subsystem;
+	FDelegateHandle LoginDelegateHandle;
 
 };

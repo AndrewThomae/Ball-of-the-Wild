@@ -12,6 +12,8 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.gitattributes" />
+    <None Include="..\..\EOSSDK-Win64-Shipping.dll" />
+    <None Include="..\..\EOSSDK-Win64-Shipping.lib" />
     <None Include="..\..\start.bat" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -295,9 +297,6 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWildCharacter.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
-    <None Include="..\..\Source\BallOfTheWild\BallOfTheWild.Build.cs">
-      <Filter>Source\BallOfTheWild</Filter>
-    </None>
     <ClCompile Include="..\..\Source\BallOfTheWild\BallOfTheWildGameMode.cpp">
       <Filter>Source\BallOfTheWild</Filter>
     </ClCompile>
@@ -319,6 +318,9 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\eos_types.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
+    <None Include="..\..\Source\BallOfTheWild\BallOfTheWild.Build.cs">
+      <Filter>Source\BallOfTheWild</Filter>
+    </None>
     <Filter Include="Source\BallOfTheWild\Private">
       <UniqueIdentifier>{84015DAC-010B-3E87-9F8F-0992012D97A6}</UniqueIdentifier>
     </Filter>

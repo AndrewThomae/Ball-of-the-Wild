@@ -24,16 +24,24 @@ void UBallOfTheWildGameInstance::Init() {
 	Super::Init();
 
 	OnlineSubsystem = IOnlineSubsystem::Get();
+	Subsystem = Online::GetSubsystem(this->GetWorld());
 }
 
 void UBallOfTheWildGameInstance::Login(FString name) {
 	if (OnlineSubsystem) {
-		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
+		if (IOnlineIdentityPtr Identity = Subsystem->GetIdentityInterface()) {
 			FOnlineAccountCredentials Credentials;
 			Credentials.Id = FString("127.0.0.1:8081");
 			Credentials.Token = name;
-
 			Credentials.Type = FString("developer");
+
+			//this->LoginDelegateHandle = Identity->AddOnLoginCompleteDelegate_Handle(
+				//0,
+				//FOnLoginComplete::FDelegate::CreateUObject(
+					//this,
+					//&UBallOfTheWildGameInstance::OnLoginComplete));
+			//Identity->AutoLogin(0);
+
 			Identity->OnLoginCompleteDelegates->AddUObject(this, &UBallOfTheWildGameInstance::OnLoginComplete);
 			Identity->Login(0, Credentials);
 		}
@@ -46,7 +54,10 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 		userNum = LocalUserNum;
 		if (OnlineSubsystem) {
 			if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
-				Identity->ClearOnLoginCompleteDelegates(0, this);
+				Identity->ClearOnLoginCompleteDelegate_Handle(LocalUserNum, this->LoginDelegateHandle);
+				//this->LoginDelegateHandle.Reset();
+
+
 				Name = GetName(UserId);
 				FString LocalId = *UserId.ToString();
 				int32 index = LocalId.Find("|");
@@ -54,8 +65,8 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 				UE_LOG(LogTemp, Warning, TEXT("Logged In: %s, userNum: %d, LocalId: %s, Index: %d, New LocalId: %s"), *Name, LocalUserNum, *UserId.ToString(), index, *LocalId2);
 				
 
-				IOnlineSubsystem* Subsystem = Online::GetSubsystem(this->GetWorld());
-				IOnlineStatsPtr StatsInterface = Subsystem->GetStatsInterface();
+				//IOnlineSubsystem* Subsystem = Online::GetSubsystem(this->GetWorld());
+				IOnlineStatsPtr StatsInterface = OnlineSubsystem->GetStatsInterface();
 
 				FOnlineStatsUserUpdatedStats Stat = FOnlineStatsUserUpdatedStats(Identity->GetUniquePlayerId(0).ToSharedRef());
 
@@ -79,6 +90,10 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 						const FOnlineError& ResultState)
 						{
 							// Check `ResultState.bSucceeded`.
+							if (ResultState.bSucceeded == true)
+							{
+								UE_LOG(LogTemp, Warning, TEXT("Result State: %d"), ResultState.bSucceeded);
+							}
 						}));
 
 
