@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include <eos_sdk.h>
 #include "Interfaces/OnlineIdentityInterface.h"
 #include "Interfaces/OnlineSessionInterface.h"
 #include "Engine/GameInstance.h"
@@ -22,6 +23,8 @@ public:
 
 	virtual void Init();
 
+	EOS_HPlatform Platform;
+
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void Login(FString name);
 	int32 userNum;
@@ -31,9 +34,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 		void DestroySession();
 
-	UFUNCTION(BlueprintCallable, Category = "Sessions")
-	void AddFriendJoinHandler();
+	//UFUNCTION(BlueprintCallable, Category = "Sessions")
+	//void AddFriendJoinHandler();
 
+
+	//UFUNCTION(BlueprintCallable, Category = "Sessions")
+		//void CreateSession();
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 

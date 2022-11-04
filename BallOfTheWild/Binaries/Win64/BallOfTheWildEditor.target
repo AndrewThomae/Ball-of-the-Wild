@@ -23549,6 +23549,10 @@
 		{
 			"Path": "$(ProjectDir)/Plugins/OnlineSubsystemEOS/OnlineSubsystemEOS.uplugin",
 			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Source/BallOfTheWild/EOSSDK-Win64-Shipping.dll",
+			"Type": "NonUFS"
 		}
 	],
 	"AdditionalProperties": [

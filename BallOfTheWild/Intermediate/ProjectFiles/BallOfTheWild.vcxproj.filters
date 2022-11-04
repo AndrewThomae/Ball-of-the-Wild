@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.gitattributes" />
+    <None Include="..\..\start.bat" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -27,7 +28,13 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGameUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultScalability.ini">
       <Filter>Config</Filter>
     </None>
     <Filter Include="Config\HoloLens">
@@ -315,8 +322,8 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\Public\BallOfTheWildGameInstance.h">
       <Filter>Source\BallOfTheWild\Public</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.0\Engine\Source\Runtime\Core\Public\HAL\Platform.h" />
+    <None Include="..\..\..\..\..\..\Downloads\EOS-SDK-21924193-v1.15.3\SDK\Bin\EOSSDK-Win64-Shipping.dll">
+      <Filter>Source\BallOfTheWild</Filter>
+    </None>
   </ItemGroup>
 </Project>
