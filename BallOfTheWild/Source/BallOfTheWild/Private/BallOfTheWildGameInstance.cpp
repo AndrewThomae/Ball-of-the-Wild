@@ -61,6 +61,12 @@ void UBallOfTheWildGameInstance::DestroySession() {
 	}
 }
 
+void UBallOfTheWildGameInstance::AddFriendJoinHandler()
+{
+	IOnlineSessionPtr SessionPtr = OnlineSubsystem->GetSessionInterface();
+	EOS
+}
+
 void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, bool bWasSuccessful) {
 	UE_LOG(LogTemp, Warning, TEXT("Session Destroyed: %d"), bWasSuccessful);
 	if (OnlineSubsystem) {

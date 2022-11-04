@@ -31,6 +31,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 		void DestroySession();
 
+	UFUNCTION(BlueprintCallable, Category = "Sessions")
+	void AddFriendJoinHandler();
+
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 
