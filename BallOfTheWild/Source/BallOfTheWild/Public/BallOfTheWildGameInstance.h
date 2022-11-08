@@ -53,5 +53,5 @@ public:
 
 protected:
 	class IOnlineSubsystem* OnlineSubsystem;
-
+	static void EOS_CALL StatsIngestCallbackFn(const EOS_Stats_IngestStatCompleteCallbackInfo* Data);
 };

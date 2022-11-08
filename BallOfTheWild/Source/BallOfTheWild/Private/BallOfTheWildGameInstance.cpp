@@ -15,6 +15,7 @@
 #include <eos_sessions.h>
 #include <eos_presence.h>
 #include <eos_ui.h>
+#include <cassert>
 
 UBallOfTheWildGameInstance::UBallOfTheWildGameInstance() {
 
@@ -52,6 +53,16 @@ void UBallOfTheWildGameInstance::Init() {
 	else {
 		UE_LOG(LogTemp, Warning, TEXT("Platform Create Failed"));
 	}
+}
+
+void EOS_CALL UBallOfTheWildGameInstance::StatsIngestCallbackFn(const const EOS_Stats_IngestStatCompleteCallbackInfo* Data) {
+	assert(Data != NULL);
+	if (Data->ResultCode != EOS_EResult::EOS_Success)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Ingest Stat Error"));
+		return;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("Ingest Stat Success"));
 }
 
 void UBallOfTheWildGameInstance::Login(FString name) {
