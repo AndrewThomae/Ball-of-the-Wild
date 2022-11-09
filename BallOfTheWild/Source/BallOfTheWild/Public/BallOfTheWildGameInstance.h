@@ -22,8 +22,12 @@ public:
 	UBallOfTheWildGameInstance();
 
 	virtual void Init();
+	FString LocalId;
+
 
 	EOS_HPlatform Platform;
+	EOS_HPlatform PlatformHandle;
+	EOS_HStats StatsHandle;
 
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void Login(FString name);
@@ -45,6 +49,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Multiplayer")
 		FString GetUserName();
+
+	UFUNCTION(BlueprintCallable, Category = "Stats")
+		void PleaseWork();
 
 	FString Name;
 

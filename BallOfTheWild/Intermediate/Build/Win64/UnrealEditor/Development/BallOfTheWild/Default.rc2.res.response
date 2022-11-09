@@ -2,12 +2,12 @@
 /D_WIN64
 /l 0x409
 /I "."
-/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
 /DIS_PROGRAM=0
 /DUE_EDITOR=1
 /DENABLE_PGO_PROFILE=0
@@ -64,5 +64,5 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="Third Person Game Template"
 /DPROJECT_PRODUCT_IDENTIFIER=BallOfTheWild
-/fo "C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\Default.rc2.res"
+/fo "D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

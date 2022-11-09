@@ -1,6 +1,6 @@
-C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\BallOfTheWildCharacter.cpp
+D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\BallOfTheWildCharacter.cpp
 /I .
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\Private
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
 /I ..\Shaders\Shared
@@ -252,9 +252,9 @@ C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheW
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\Public
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Inc\BallOfTheWild
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Source
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheWild\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh
@@ -265,10 +265,10 @@ C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheW
 /I ..\Plugins\Online\OnlineSubsystem\Source\Public
 /I ..\Plugins\Online\OnlineBase
 /I ..\Plugins\Online\OnlineBase\Source\Public
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Intermediate\Build\Win64\UnrealEditor\Inc\OnlineSubsystemEOS
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Source
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Source\OnlineSubsystemEOS\Private
-/I C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Source\OnlineSubsystemEOS\Public
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Intermediate\Build\Win64\UnrealEditor\Inc\OnlineSubsystemEOS
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Source
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Source\OnlineSubsystemEOS\Private
+/I D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Plugins\OnlineSubsystemEOS\Source\OnlineSubsystemEOS\Public
 /I ..\Plugins\Online\OnlineSubsystemUtils\Intermediate\Build\Win64\UnrealEditor\Inc\OnlineSubsystemUtils
 /I ..\Plugins\Online\OnlineSubsystemUtils\Source
 /I ..\Plugins\Online\OnlineSubsystemUtils\Source\OnlineSubsystemUtils\Classes
@@ -288,18 +288,18 @@ C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Source\BallOfTheW
 /I ThirdParty\PhysX3\PhysX_3.4\Include\common
 /I ThirdParty\PhysX3\PhysX_3.4\Include\extensions
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
-/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\Definitions.BallOfTheWild.h"
-/Yu"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.cpp.obj"
-/sourceDependencies C:\Users\alexb\Documents\GitHub\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.cpp.json
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
+/FI"D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\Definitions.BallOfTheWild.h"
+/Yu"D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\BallOfTheWildEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.cpp.obj"
+/sourceDependencies D:\UnrealEngine\Ball-of-the-Wild\BallOfTheWild\Intermediate\Build\Win64\UnrealEditor\Development\BallOfTheWild\BallOfTheWildCharacter.cpp.json
 /Zc:inline
 /nologo
 /Oi
