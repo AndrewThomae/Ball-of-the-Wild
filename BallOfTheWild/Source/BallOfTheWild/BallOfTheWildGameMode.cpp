@@ -2,6 +2,7 @@
 
 #include "BallOfTheWildGameMode.h"
 #include "BallOfTheWildCharacter.h"
+#include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"
 
 ABallOfTheWildGameMode::ABallOfTheWildGameMode()
@@ -12,4 +13,8 @@ ABallOfTheWildGameMode::ABallOfTheWildGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+}
+
+void ABallOfTheWildGameMode::NewWorld() {
+	GetWorld()->SeamlessTravel("/Game/MultiplayerMap1", true);
 }

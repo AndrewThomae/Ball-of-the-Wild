@@ -4,3 +4,4 @@
 *.pch
 *CrashReportClient.ini
 BallOfTheWild/start.bat
+\BallOfTheWild\Source\SDK\*

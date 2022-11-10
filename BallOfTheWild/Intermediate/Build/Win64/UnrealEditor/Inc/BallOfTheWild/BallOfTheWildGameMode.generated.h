@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define BALLOFTHEWILD_BallOfTheWildGameMode_generated_h
 
 #define FID_BallOfTheWild_Source_BallOfTheWild_BallOfTheWildGameMode_h_12_SPARSE_DATA
-#define FID_BallOfTheWild_Source_BallOfTheWild_BallOfTheWildGameMode_h_12_RPC_WRAPPERS
-#define FID_BallOfTheWild_Source_BallOfTheWild_BallOfTheWildGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_BallOfTheWild_Source_BallOfTheWild_BallOfTheWildGameMode_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execNewWorld);
+
+
+#define FID_BallOfTheWild_Source_BallOfTheWild_BallOfTheWildGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execNewWorld);
+
+
 #define FID_BallOfTheWild_Source_BallOfTheWild_BallOfTheWildGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABallOfTheWildGameMode(); \
