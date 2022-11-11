@@ -28,6 +28,7 @@ public:
 	EOS_HPlatform Platform;
 	EOS_HPlatform PlatformHandle;
 	EOS_HStats StatsHandle;
+	EOS_HAuth AuthHandle;
 
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void Login(FString name);
@@ -61,4 +62,5 @@ public:
 protected:
 	class IOnlineSubsystem* OnlineSubsystem;
 	static void EOS_CALL StatsIngestCallbackFn(const EOS_Stats_IngestStatCompleteCallbackInfo* Data);
+	static void EOS_CALL LoginCompleteCallbackFn(const EOS_Auth_LoginCallbackInfo* Data);
 };

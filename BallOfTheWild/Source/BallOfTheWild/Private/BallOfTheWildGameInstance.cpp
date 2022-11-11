@@ -13,6 +13,7 @@
 #include "Interfaces/OnlineSessionInterface.h"
 #include "eos_friends.h"
 #include <eos_stats.h>
+#include <eos_auth.h>
 #include <eos_sessions.h>
 #include <eos_presence.h>
 #include <eos_ui.h>
@@ -48,6 +49,7 @@ void UBallOfTheWildGameInstance::Init() {
 	pOptions.EncryptionKey = "645267556B58703273357638782F413F4428472B4B6250655368566D59713374";
 	pOptions.DeploymentId = "f7cc0c54eda34b74bf00b6d1b1045af5";
 	Platform = EOS_Platform_Create(&pOptions);
+	AuthHandle = EOS_Platform_GetAuthInterface(Platform);
 	if (Platform) {
 		UE_LOG(LogTemp, Warning, TEXT("Platform Create Success"));
 	}
@@ -66,16 +68,53 @@ void EOS_CALL UBallOfTheWildGameInstance::StatsIngestCallbackFn(const EOS_Stats_
 	UE_LOG(LogTemp, Warning, TEXT("Ingest Stat Success"));
 }
 
+void EOS_CALL UBallOfTheWildGameInstance::LoginCompleteCallbackFn(const EOS_Auth_LoginCallbackInfo* Data) {
+	UE_LOG(LogTemp, Warning, TEXT("In the callback now"));
+	assert(Data != NULL);
+	if (Data->ResultCode == EOS_EResult::EOS_Success) {
+		UE_LOG(LogTemp, Warning, TEXT("LocalUserId: %s"), Data->LocalUserId);
+		return;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("User not logged on"));
+}
+
 void UBallOfTheWildGameInstance::Login(FString name) {
 	if (OnlineSubsystem) {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
-			FOnlineAccountCredentials Credentials;
+			/*FOnlineAccountCredentials Credentials;
 			Credentials.Id = FString("127.0.0.1:8081");
 			Credentials.Token = name;
 
 			Credentials.Type = FString("developer");
 			Identity->OnLoginCompleteDelegates->AddUObject(this, &UBallOfTheWildGameInstance::OnLoginComplete);
-			Identity->Login(0, Credentials);
+			Identity->Login(0, Credentials);*/
+			UE_LOG(LogTemp, Warning, TEXT("Here we are before things happen"));
+			EOS_Auth_LoginOptions LoginOptions;
+			memset(&LoginOptions, 0, sizeof(LoginOptions));
+			LoginOptions.ApiVersion = EOS_AUTH_LOGIN_API_LATEST;
+			char FirstParamStr[4096 * 2 + 1];
+			sprintf_s(FirstParamStr, sizeof(FirstParamStr), "%s", "localhost:8081");
+			char SecondParamStr[256];
+			sprintf_s(SecondParamStr, sizeof(SecondParamStr), "%s", "Default");
+			UE_LOG(LogTemp, Warning, TEXT("Default: %c%c%c"), SecondParamStr[0], SecondParamStr[1], SecondParamStr[2]);
+			EOS_Auth_Credentials Credentials = {};
+			Credentials.ApiVersion = EOS_AUTH_CREDENTIALS_API_LATEST;
+
+			Credentials.Id = FirstParamStr;
+			Credentials.Token = SecondParamStr;
+			Credentials.Type = EOS_ELoginCredentialType::EOS_LCT_Developer;
+			LoginOptions.ScopeFlags |= EOS_EAuthScopeFlags::EOS_AS_NoFlags;
+			LoginOptions.Credentials = &Credentials;
+			EOS_Auth_Login(AuthHandle, &LoginOptions, this, LoginCompleteCallbackFn);
+			UE_LOG(LogTemp, Warning, TEXT("Alright well were here now"));
+			if (ConnectAuthExpirationId == EOS_INVALID_NOTIFICATIONID)
+			{
+				EOS_Connect_AddNotifyAuthExpirationOptions Options{};
+				Options.ApiVersion = EOS_CONNECT_ADDNOTIFYAUTHEXPIRATION_API_LATEST;
+
+				ConnectAuthExpirationId = EOS_Connect_AddNotifyAuthExpiration(ConnectHandle, &Options, NULL, ConnectAuthExpirationCb);
+			}
+
 		}
 	}
 }
