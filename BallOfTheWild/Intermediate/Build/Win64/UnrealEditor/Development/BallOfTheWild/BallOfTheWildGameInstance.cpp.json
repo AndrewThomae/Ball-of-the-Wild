@@ -57,6 +57,11 @@
             "c:\\program files\\epic games\\ue_5.0\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystempackage.h",
             "c:\\users\\alexb\\documents\\github\\ball-of-the-wild\\ballofthewild\\intermediate\\build\\win64\\unrealeditor\\inc\\ballofthewild\\ballofthewildgameinstance.generated.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_platform_prereqs.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_auth.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_friends.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_sessions.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_presence.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_ui.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystem.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystemmodule.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesessionsettings.h",
@@ -70,11 +75,7 @@
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\dialoguetypes.generated.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystaticstypes.generated.h",
-            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystatics.generated.h",
-            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_friends.h",
-            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_sessions.h",
-            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_presence.h",
-            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\thirdparty\\eossdk\\sdk\\include\\eos_ui.h"
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystatics.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -17,6 +17,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_19_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetUserName); \
+	DECLARE_FUNCTION(execCreateSession); \
 	DECLARE_FUNCTION(execDestroySession); \
 	DECLARE_FUNCTION(execLogin);
 
@@ -24,6 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetUserName); \
+	DECLARE_FUNCTION(execCreateSession); \
 	DECLARE_FUNCTION(execDestroySession); \
 	DECLARE_FUNCTION(execLogin);
 

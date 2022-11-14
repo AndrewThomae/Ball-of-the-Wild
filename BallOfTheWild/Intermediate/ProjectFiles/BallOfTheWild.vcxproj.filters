@@ -304,6 +304,12 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\BallOfTheWildGameMode.h">
       <Filter>Source\BallOfTheWild</Filter>
     </ClInclude>
+    <None Include="..\..\Source\BallOfTheWild\EOSSDK-Win64-Shipping.dll">
+      <Filter>Source\BallOfTheWild</Filter>
+    </None>
+    <None Include="..\..\Source\BallOfTheWild\EOSSDK-Win64-Shipping.lib">
+      <Filter>Source\BallOfTheWild</Filter>
+    </None>
     <ClCompile Include="..\..\Source\BallOfTheWild\MessageParser.cpp">
       <Filter>Source\BallOfTheWild</Filter>
     </ClCompile>
@@ -322,8 +328,5 @@
     <ClInclude Include="..\..\Source\BallOfTheWild\Public\BallOfTheWildGameInstance.h">
       <Filter>Source\BallOfTheWild\Public</Filter>
     </ClInclude>
-    <None Include="..\..\..\..\..\..\Downloads\EOS-SDK-21924193-v1.15.3\SDK\Bin\EOSSDK-Win64-Shipping.dll">
-      <Filter>Source\BallOfTheWild</Filter>
-    </None>
   </ItemGroup>
 </Project>

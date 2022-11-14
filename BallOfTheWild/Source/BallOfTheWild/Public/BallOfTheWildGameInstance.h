@@ -24,6 +24,8 @@ public:
 	virtual void Init();
 
 	EOS_HPlatform Platform;
+	EOS_HAuth AuthPtr;
+	EOS_HConnect ConnPtr;
 
 	UFUNCTION(BlueprintCallable, Category = "Sessions")
 	void Login(FString name);
@@ -38,8 +40,11 @@ public:
 	//void AddFriendJoinHandler();
 
 
-	//UFUNCTION(BlueprintCallable, Category = "Sessions")
-		//void CreateSession();
+	UFUNCTION(BlueprintCallable, Category = "Sessions")
+		void CreateSession();
+
+	static void EOS_CALL OnUpdateSessionCompleteCallback_ForCreate(const EOS_Sessions_UpdateSessionCallbackInfo* Data);
+	static void EOS_CALL OnLoginCallback(const EOS_Auth_LoginCallbackInfo* Data);
 
 	virtual FString GetName(const FUniqueNetId& UserId);
 

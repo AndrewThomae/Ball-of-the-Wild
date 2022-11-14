@@ -21,6 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 		*(FString*)Z_Param__Result=P_THIS->GetUserName();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UBallOfTheWildGameInstance::execCreateSession)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CreateSession();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UBallOfTheWildGameInstance::execDestroySession)
 	{
 		P_FINISH;
@@ -40,11 +47,37 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 	{
 		UClass* Class = UBallOfTheWildGameInstance::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CreateSession", &UBallOfTheWildGameInstance::execCreateSession },
 			{ "DestroySession", &UBallOfTheWildGameInstance::execDestroySession },
 			{ "GetUserName", &UBallOfTheWildGameInstance::execGetUserName },
 			{ "Login", &UBallOfTheWildGameInstance::execLogin },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Sessions" },
+		{ "Comment", "//UFUNCTION(BlueprintCallable, Category = \"Sessions\")\n//void AddFriendJoinHandler();\n" },
+		{ "ModuleRelativePath", "Public/BallOfTheWildGameInstance.h" },
+		{ "ToolTip", "UFUNCTION(BlueprintCallable, Category = \"Sessions\")\nvoid AddFriendJoinHandler();" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBallOfTheWildGameInstance, nullptr, "CreateSession", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UBallOfTheWildGameInstance_DestroySession_Statics
 	{
@@ -155,6 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BallOfTheWild,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UBallOfTheWildGameInstance_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_CreateSession, "CreateSession" }, // 3368035943
 		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_DestroySession, "DestroySession" }, // 2796930757
 		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_GetUserName, "GetUserName" }, // 869839098
 		{ &Z_Construct_UFunction_UBallOfTheWildGameInstance_Login, "Login" }, // 4137678587
@@ -202,9 +236,9 @@ void EmptyLinkFunctionForGeneratedCodeBallOfTheWildGameInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBallOfTheWildGameInstance, UBallOfTheWildGameInstance::StaticClass, TEXT("UBallOfTheWildGameInstance"), &Z_Registration_Info_UClass_UBallOfTheWildGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBallOfTheWildGameInstance), 95758898U) },
+		{ Z_Construct_UClass_UBallOfTheWildGameInstance, UBallOfTheWildGameInstance::StaticClass, TEXT("UBallOfTheWildGameInstance"), &Z_Registration_Info_UClass_UBallOfTheWildGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBallOfTheWildGameInstance), 2163364028U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_675037215(TEXT("/Script/BallOfTheWild"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_3701321874(TEXT("/Script/BallOfTheWild"),
 		Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BallOfTheWild_Source_BallOfTheWild_Public_BallOfTheWildGameInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

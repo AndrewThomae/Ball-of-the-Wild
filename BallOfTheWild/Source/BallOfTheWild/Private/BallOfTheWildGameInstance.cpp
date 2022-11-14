@@ -5,24 +5,31 @@
 #include "BallOfTheWildGameInstance.h"
 #include "eos_platform_prereqs.h"
 #include <eos_sdk.h>
+#include <eos_auth.h>
+#include <eos_auth_types.h>
+#include <eos_connect.h>
+#include <eos_connect_types.h>
+#include "eos_friends.h"
+#include "eos_friends_types.h"
+#include <eos_sessions.h>
+#include <eos_sessions_types.h>
+#include <eos_presence.h>
+#include <eos_presence_types.h>
+#include <eos_ui.h>
+//#include <eos_ui_keys.h>
+#include <eos_ui_types.h>
 #include "OnlineSubsystem.h"
 #include "OnlineSessionSettings.h"
 #include "Interfaces/OnlineIdentityInterface.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "Interfaces/OnlineSessionInterface.h"
-#include "eos_friends.h"
-#include <eos_sessions.h>
-#include <eos_presence.h>
-#include <eos_ui.h>
 
 UBallOfTheWildGameInstance::UBallOfTheWildGameInstance() {
 
 }
 
 void UBallOfTheWildGameInstance::Init() {
-	Super::Init();
-
 	OnlineSubsystem = IOnlineSubsystem::Get();
 
 	FPlatformProcess::GetDllHandle(TEXT("$(ModuleDir)\\EOSSDK-Win65-Shipping.dll"));
@@ -52,10 +59,12 @@ void UBallOfTheWildGameInstance::Init() {
 	else {
 		UE_LOG(LogTemp, Warning, TEXT("Platform Create Failed"));
 	}
+	AuthPtr = EOS_Platform_GetAuthInterface(Platform);
+	ConnPtr = EOS_Platform_GetConnectInterface(Platform);
 }
 
 void UBallOfTheWildGameInstance::Login(FString name) {
-	if (OnlineSubsystem) {
+	/*if (OnlineSubsystem) {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			FOnlineAccountCredentials Credentials;
 			Credentials.Id = FString("127.0.0.1:8081");
@@ -65,7 +74,23 @@ void UBallOfTheWildGameInstance::Login(FString name) {
 			Identity->OnLoginCompleteDelegates->AddUObject(this, &UBallOfTheWildGameInstance::OnLoginComplete);
 			Identity->Login(0, Credentials);
 		}
-	}
+		
+		
+	}*/
+		EOS_Auth_LoginOptions LoginOptions = {};
+		LoginOptions.ApiVersion = EOS_AUTH_LOGIN_API_LATEST;
+		EOS_Auth_Credentials creds = {};
+		creds.ApiVersion = EOS_AUTH_CREDENTIALS_API_LATEST;
+		creds.Id = "127.0.0.1:8081";
+		creds.Token = "default";
+		creds.Type = EOS_ELoginCredentialType::EOS_LCT_Developer;
+		EOS_Platform_Tick(Platform);
+		LoginOptions.Credentials = &creds;
+		LoginOptions.ScopeFlags = EOS_EAuthScopeFlags::EOS_AS_BasicProfile | EOS_EAuthScopeFlags::EOS_AS_Email | EOS_EAuthScopeFlags::EOS_AS_FriendsList | EOS_EAuthScopeFlags::EOS_AS_FriendsManagement | EOS_EAuthScopeFlags::EOS_AS_Presence;
+		void* data;
+		EOS_Auth_Login(AuthPtr, &LoginOptions, &data, OnLoginCallback);
+		EOS_Platform_Tick(Platform);
+		UE_LOG(LogTemp, Warning, TEXT("Login"));
 }
 
 void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error) {
@@ -109,7 +134,7 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 }
 
 
-/*void UBallOfTheWildGameInstance::CreateSession()
+void UBallOfTheWildGameInstance::CreateSession()
 {
 	EOS_Sessions_CreateSessionModificationOptions CreateOptions = {};
 	CreateOptions.ApiVersion = EOS_SESSIONS_CREATESESSIONMODIFICATION_API_LATEST;
@@ -122,11 +147,14 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 	CreateOptions.bPresenceEnabled = true;
 	CreateOptions.bSanctionsEnabled = EOS_FALSE;
 
-	EOS_Platform_GetSessionsInterface(FPlatform)
+	EOS_HSessions Session = EOS_Platform_GetSessionsInterface(Platform);
 
 	EOS_HSessionModification ModificationHandle = NULL;
-	EOS_EResult CreateResult = EOS_Sessions_CreateSessionModification(NULL, &CreateOptions, &ModificationHandle);
+	EOS_EResult CreateResult = EOS_Sessions_CreateSessionModification(Session, &CreateOptions, &ModificationHandle);
 
+	if (CreateResult != EOS_EResult::EOS_Success) {
+		UE_LOG(LogTemp, Warning, TEXT("Failed: %d"), CreateResult);
+	}
 
 	EOS_SessionModification_SetPermissionLevelOptions PermOptions = {};
 	PermOptions.ApiVersion = EOS_SESSIONMODIFICATION_SETPERMISSIONLEVEL_API_LATEST;
@@ -134,7 +162,7 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 	EOS_EResult SetPermsResult = EOS_SessionModification_SetPermissionLevel(ModificationHandle, &PermOptions);
 	if (SetPermsResult != EOS_EResult::EOS_Success)
 	{
-		//FDebugLog::LogError(L"Session Matchmaking: failed to set permissions. Error code: %ls", FStringUtils::Widen(EOS_EResult_ToString(SetPermsResult)).c_str());
+		UE_LOG(LogTemp, Warning, TEXT("Failed"));
 		EOS_SessionModification_Release(ModificationHandle);
 		//return false;
 	}
@@ -145,6 +173,7 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 	EOS_EResult SetJIPResult = EOS_SessionModification_SetJoinInProgressAllowed(ModificationHandle, &JIPOptions);
 	if (SetJIPResult != EOS_EResult::EOS_Success)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Failed"));
 		//FDebugLog::LogError(L"Session Matchmaking: failed to set 'join in progress allowed' flag. Error code: %ls", FStringUtils::Widen(EOS_EResult_ToString(SetJIPResult)).c_str());
 		EOS_SessionModification_Release(ModificationHandle);
 		//return false;
@@ -156,6 +185,7 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 	EOS_EResult SetIAResult = EOS_SessionModification_SetInvitesAllowed(ModificationHandle, &IAOptions);
 	if (SetIAResult != EOS_EResult::EOS_Success)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Failed"));
 		//FDebugLog::LogError(L"Session Matchmaking: failed to set invites allowed. Error code: %ls", FStringUtils::Widen(EOS_EResult_ToString(SetIAResult)).c_str());
 		EOS_SessionModification_Release(ModificationHandle);
 		//return false;
@@ -176,13 +206,14 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 	EOS_EResult SetAttrResult = EOS_SessionModification_AddAttribute(ModificationHandle, &AttrOptions);
 	if (SetAttrResult != EOS_EResult::EOS_Success)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Failed"));
 		//FDebugLog::LogError(L"Session Matchmaking: failed to set a bucket id attribute. Error code: %ls", FStringUtils::Widen(EOS_EResult_ToString(SetAttrResult)).c_str());
 		EOS_SessionModification_Release(ModificationHandle);
 		//return false;
 	}
 
 	//Set other attributes
-	for (const FSession::Attribute& NextAttribute : Session.Attributes)
+	/*for (const FSession::Attribute& NextAttribute : Session.Attributes)
 	{
 		AttrData.Key = NextAttribute.Key.c_str();
 
@@ -214,18 +245,28 @@ void UBallOfTheWildGameInstance::OnDestroySessionComplete(FName SessionName, boo
 			EOS_SessionModification_Release(ModificationHandle);
 			return false;
 		}
-	}
+	}*/
 
 
 	EOS_Sessions_UpdateSessionOptions UpdateOptions = {};
 	UpdateOptions.ApiVersion = EOS_SESSIONS_UPDATESESSION_API_LATEST;
 	UpdateOptions.SessionModificationHandle = ModificationHandle;
-	EOS_Sessions_UpdateSession(SessionsHandle, &UpdateOptions, nullptr, OnUpdateSessionCompleteCallback_ForCreate);
+	EOS_Sessions_UpdateSession(Session, &UpdateOptions, nullptr, OnUpdateSessionCompleteCallback_ForCreate);
 
 	EOS_SessionModification_Release(ModificationHandle);
 
-	return true;
-}*/
+	//return true;
+}
+
+void EOS_CALL UBallOfTheWildGameInstance::OnUpdateSessionCompleteCallback_ForCreate(const EOS_Sessions_UpdateSessionCallbackInfo* Data)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Create Session: %s"), Data->ResultCode);
+}
+
+void EOS_CALL UBallOfTheWildGameInstance::OnLoginCallback(const EOS_Auth_LoginCallbackInfo* Data)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Login: %s"), Data->ResultCode);
+}
 
 FString UBallOfTheWildGameInstance::GetName(const FUniqueNetId& UserId)
 {
