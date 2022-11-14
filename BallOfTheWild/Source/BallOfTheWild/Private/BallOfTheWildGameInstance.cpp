@@ -63,6 +63,7 @@ void EOS_CALL UBallOfTheWildGameInstance::StatsIngestCallbackFn(const EOS_Stats_
 	if (Data->ResultCode != EOS_EResult::EOS_Success)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Ingest Stat Error"));
+		//UE_LOG(LogTemp, Warning, TEXT("LocalUserId: %s"), Data->LocalUserId);
 		return;
 	}
 	UE_LOG(LogTemp, Warning, TEXT("Ingest Stat Success"));
@@ -107,6 +108,7 @@ void UBallOfTheWildGameInstance::Login(FString name) {
 			LoginOptions.Credentials = &Credentials;
 			EOS_Auth_Login(AuthHandle, &LoginOptions, this, LoginCompleteCallbackFn);
 			UE_LOG(LogTemp, Warning, TEXT("Alright well were here now"));
+
 			if (ConnectAuthExpirationId == EOS_INVALID_NOTIFICATIONID)
 			{
 				EOS_Connect_AddNotifyAuthExpirationOptions Options{};
