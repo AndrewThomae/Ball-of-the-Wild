@@ -101,27 +101,31 @@ void UBallOfTheWildGameInstance::Login(FString name) {
 			EOS_Auth_Credentials Credentials = {};
 			Credentials.ApiVersion = EOS_AUTH_CREDENTIALS_API_LATEST;
 
-			Credentials.Id = FirstParamStr;
-			Credentials.Token = SecondParamStr;
-			Credentials.Type = EOS_ELoginCredentialType::EOS_LCT_Developer;
-			LoginOptions.ScopeFlags |= EOS_EAuthScopeFlags::EOS_AS_NoFlags;
+			//Credentials.Id = FirstParamStr;
+			//Credentials.Token = SecondParamStr;
+			Credentials.Type = EOS_ELoginCredentialType::EOS_LCT_AccountPortal;
+			LoginOptions.ScopeFlags = EOS_EAuthScopeFlags::EOS_AS_BasicProfile | EOS_EAuthScopeFlags::EOS_AS_FriendsList | EOS_EAuthScopeFlags::EOS_AS_Presence;
 			LoginOptions.Credentials = &Credentials;
 			EOS_Auth_Login(AuthHandle, &LoginOptions, this, LoginCompleteCallbackFn);
+			EOS_Platform_Tick(Platform);
 			UE_LOG(LogTemp, Warning, TEXT("Alright well were here now"));
 
-			if (ConnectAuthExpirationId == EOS_INVALID_NOTIFICATIONID)
+			/*if (ConnectAuthExpirationId == EOS_INVALID_NOTIFICATIONID)
 			{
 				EOS_Connect_AddNotifyAuthExpirationOptions Options{};
 				Options.ApiVersion = EOS_CONNECT_ADDNOTIFYAUTHEXPIRATION_API_LATEST;
 
 				ConnectAuthExpirationId = EOS_Connect_AddNotifyAuthExpiration(ConnectHandle, &Options, NULL, ConnectAuthExpirationCb);
-			}
+			}*/
 
 		}
 	}
 }
 
 void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error) {
+	//UE_LOG(LogTemp, Warning, TEXT("Login Complete - User ID: %ls"), (Data->LocalUserId).c_str());
+	
+	
 	UE_LOG(LogTemp, Warning, TEXT("Logged In: %d"), bWasSuccessful);
 	if (bWasSuccessful) {
 		userNum = LocalUserNum;
@@ -186,7 +190,7 @@ void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSu
 				EOS_Stats_IngestStat(StatsHandle, &StatsIngestOptions, nullptr, StatsIngestCallbackFn);
 			}
 		}
-	}
+	} 
 	else {
 		if (IOnlineIdentityPtr Identity = OnlineSubsystem->GetIdentityInterface()) {
 			Identity->ClearOnLoginCompleteDelegates(0, this);
