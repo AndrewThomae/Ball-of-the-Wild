@@ -5,6 +5,7 @@
 #include "BallOfTheWildGameInstance.h"
 #include "eos_platform_prereqs.h"
 #include <eos_sdk.h>
+#include <UserManagerEOS.h>
 #include <eos_auth.h>
 #include <eos_auth_types.h>
 #include <eos_connect.h>
