@@ -5,7 +5,7 @@
 #include "BallOfTheWildGameInstance.h"
 #include "eos_platform_prereqs.h"
 #include <eos_sdk.h>
-#include <UserManagerEOS.h>
+//#include <UserManagerEOS.h>
 #include <eos_auth.h>
 #include <eos_auth_types.h>
 #include <eos_connect.h>
@@ -33,7 +33,7 @@ UBallOfTheWildGameInstance::UBallOfTheWildGameInstance() {
 void UBallOfTheWildGameInstance::Init() {
 	OnlineSubsystem = IOnlineSubsystem::Get();
 
-	FPlatformProcess::GetDllHandle(TEXT("$(ModuleDir)\\EOSSDK-Win65-Shipping.dll"));
+	//FPlatformProcess::GetDllHandle(TEXT("$(ModuleDir)\\EOSSDK-Win64-Shipping.dll"));
 
 	EOS_InitializeOptions EOSOptions = {};
 	EOSOptions.ApiVersion = EOS_INITIALIZE_API_LATEST;
@@ -89,9 +89,16 @@ void UBallOfTheWildGameInstance::Login(FString name) {
 		LoginOptions.Credentials = &creds;
 		LoginOptions.ScopeFlags = EOS_EAuthScopeFlags::EOS_AS_BasicProfile | EOS_EAuthScopeFlags::EOS_AS_Email | EOS_EAuthScopeFlags::EOS_AS_FriendsList | EOS_EAuthScopeFlags::EOS_AS_FriendsManagement | EOS_EAuthScopeFlags::EOS_AS_Presence;
 		void* data;
+
 		EOS_Auth_Login(AuthPtr, &LoginOptions, &data, OnLoginCallback);
+
 		EOS_Platform_Tick(Platform);
 		UE_LOG(LogTemp, Warning, TEXT("Login"));
+}
+
+void EOS_CALL UBallOfTheWildGameInstance::OnLoginCallback(const EOS_Auth_LoginCallbackInfo* Data)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Login: %s"), Data->ResultCode);
 }
 
 void UBallOfTheWildGameInstance::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error) {
@@ -264,10 +271,6 @@ void EOS_CALL UBallOfTheWildGameInstance::OnUpdateSessionCompleteCallback_ForCre
 	UE_LOG(LogTemp, Warning, TEXT("Create Session: %s"), Data->ResultCode);
 }
 
-void EOS_CALL UBallOfTheWildGameInstance::OnLoginCallback(const EOS_Auth_LoginCallbackInfo* Data)
-{
-	UE_LOG(LogTemp, Warning, TEXT("Login: %s"), Data->ResultCode);
-}
 
 FString UBallOfTheWildGameInstance::GetName(const FUniqueNetId& UserId)
 {
